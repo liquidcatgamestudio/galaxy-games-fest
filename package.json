@@ -3,11 +3,26 @@
   "version": "1.0.0",
   "description": "Galaxy Games Fest",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
+    "start": "concurrently \"npm run serve:eleventy\" \"npm run watch:tailwind\"",
+    "serve:eleventy": "npx @11ty/eleventy --serve",
+    "build:eleventy": "npx @11ty/eleventy",
+    "watch:tailwind": "npx tailwindcss -i ./src/main.css -o ./_site/assets/css/styles.css --watch",
+    "build:tailwind": "npx tailwindcss -i ./src/main.css -o ./_site/assets/css/styles.css",
+    "build": "npm run prebuild && npm run build:tailwind && npm run build:eleventy"
   },
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^6.0.1",
+    "dayjs": "^1.11.13",
+    "node-fetch": "^3.3.2",
+    "papaparse": "^5.4.1",
+    "rss-parser": "^3.12.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "concurrently": "^7.6.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
   }
 }

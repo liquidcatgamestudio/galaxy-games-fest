@@ -4,10 +4,19 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title | default: "Galaxy Games Fest" }}</title>
+		<link rel="stylesheet" href="/assets/css/styles.css">
 	</head>
 	<body>
 		<header>
 			<h1>{{ title | default: "Galaxy Games Fest" }}</h1>
+			<nav>
+				<ul class="flex">
+					<li>About</li>
+					<li>Schedule</li>
+					<li>Partners</li>
+					<li>Faq</li>
+				</ul>
+			</nav>
 		</header>
 		<main>
 			{{ content }}
