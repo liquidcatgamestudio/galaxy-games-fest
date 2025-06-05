@@ -6,23 +6,27 @@
 		<title>{{ title | default: "Galaxy Games Fest" }}</title>
 		<link rel="stylesheet" href="/assets/css/styles.css">
 	</head>
-	<body>
+	<body class="bg-slate-950 text-emerald-50">
 		<header>
-			<h1>{{ title | default: "Galaxy Games Fest" }}</h1>
-			<nav>
-				<ul class="flex">
-					<li>About</li>
-					<li>Schedule</li>
-					<li>Partners</li>
-					<li>Faq</li>
-				</ul>
-			</nav>
+			<div class="w-[1080px] m-auto flex justify-between">
+				<h1>{{ title | default: "Galaxy Games Fest" }}</h1>
+				<nav>
+					<ul class="flex">
+						<li>About</li>
+						<li>Schedule</li>
+						<li>Partners</li>
+						<li>Faq</li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 		<main>
 			{{ content }}
 		</main>
 		<footer>
-			Galaxy Games Fest 2025
+			<div class="w-[1080px] m-auto flex justify-center">
+				Galaxy Games Fest 2025
+			</div>
 		</footer>
 	</body>
 </html>
