@@ -2,5 +2,4 @@
 tags: partners
 ---
 
-## Partners
-- .
+Partners go here

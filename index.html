@@ -2,29 +2,66 @@
 layout: layout.html
 ---
 
-<article class="h-screen">
-    <div class="w-[1080px] m-auto">
-        {% include "hero.html" %}
+<div class="relative w-full h-[500vh] overflow-hidden">
+  <img src="/src/img/base.png" class="fixed top-0 left-0 w-full h-full object-cover pointer-events-none" id="base" />
+  <img src="/src/img/clouds.png" class="fixed bottom-0 left-0 w-full h-full object-cover pointer-events-none" id="clouds" />
+  <img src="/src/img/lights.png" class="fixed top-[-15vh] left-0 w-full h-full object-cover pointer-events-none" id="lights" />
+  <img src="/src/img/logo_white.png" class="absolute top-[50vh] left-1/2 w-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0" id="logo" />
+</div>
+
+<article class="absolute top-[100vh] left-0 w-full h-screen z-20">
+    <div class="relative w-full max-w-[1080px] m-auto h-full border">
+        <div id="schedule" class="asteroid asteroid-up absolute top-1/4 right-0 w-1/2 h-1/2 border">
+            <div class="absolute top-0 left-0 right-0 bottom-0 z-30 w-full h-full flex flex-col justify-center items-start">{% include "schedule.html" %}</div>
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 z-20 w-full h-full scale-[250%] z-0">
+            <path fill="#0D0328" d="M60.9,-23.4C66.4,-2.8,49.8,21.4,29.2,35.2C8.6,49,-16,52.4,-37.2,39.7C-58.3,27,-76.1,-1.8,-69.4,-24.1C-62.6,-46.4,-31.3,-62.2,-1.8,-61.6C27.7,-61,55.4,-44,60.9,-23.4Z" transform="translate(100 100)" />
+            </svg>
+        </div>
     </div>
 </article>
-<article class="h-screen">
-    <div class="w-[1080px] m-auto">
-        {% include "about.html" %}
+
+<article class="absolute top-[200vh] left-0 w-full h-screen z-20">
+    <div class="relative w-full max-w-[1080px] m-auto h-full border">
+        <div id="about" class="asteroid asteroid-down absolute top-0 left-0 w-1/2 h-1/2 border">
+            <div class="absolute top-0 left-0 right-0 bottom-0 z-30 w-full h-full flex flex-col justify-center items-start">{% include "about.html" %}</div>
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 z-20 w-full h-full scale-[250%] z-0">
+            <path fill="#0D0328" d="M60.9,-23.4C66.4,-2.8,49.8,21.4,29.2,35.2C8.6,49,-16,52.4,-37.2,39.7C-58.3,27,-76.1,-1.8,-69.4,-24.1C-62.6,-46.4,-31.3,-62.2,-1.8,-61.6C27.7,-61,55.4,-44,60.9,-23.4Z" transform="translate(100 100)" />
+            </svg>
+        </div>
+        <div id="schedule2" class="asteroid asteroid-up absolute bottom-0 z-20 right-0 w-1/2 h-1/2 border">
+            <div class="absolute top-0 left-0 right-0 bottom-0 z-30 w-full h-full flex flex-col justify-center items-start">{% include "schedule2.html" %}</div>
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 z-20 w-full h-full scale-[250%] z-0">
+            <path fill="#0D0328" d="M57,-20.5C63.1,0.2,49.8,25.2,28.1,41.7C6.4,58.2,-23.7,66.1,-45.3,52.7C-66.9,39.3,-80.1,4.5,-71.1,-20.2C-62.2,-44.9,-31.1,-59.6,-2.8,-58.6C25.4,-57.7,50.9,-41.3,57,-20.5Z" transform="translate(100 100)" />
+            </svg>
+        </div>
     </div>
 </article>
-<article class="h-screen">
-    <div class="w-[1080px] m-auto">
-        {% include "schedule.html" %}
+
+<article class="absolute top-[300vh] left-0 w-full h-screen z-20">
+    <div class="relative w-full max-w-[1080px] m-auto h-full border">
+        <div id="partners" class="asteroid asteroid-down absolute top-1/4 left-1/4 w-1/2 h-1/2 border">
+            <div class="absolute top-0 left-0 right-0 bottom-0 z-30 w-full h-full flex flex-col justify-center items-start">{% include "partners.html" %}</div>
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 z-20 w-full h-full scale-[250%] z-0">
+            <path fill="#0D0328" d="M60.9,-23.4C66.4,-2.8,49.8,21.4,29.2,35.2C8.6,49,-16,52.4,-37.2,39.7C-58.3,27,-76.1,-1.8,-69.4,-24.1C-62.6,-46.4,-31.3,-62.2,-1.8,-61.6C27.7,-61,55.4,-44,60.9,-23.4Z" transform="translate(100 100)" />
+            </svg>
+        </div>
     </div>
 </article>
-<article class="h-screen">
-    <div class="w-[1080px] m-auto">
-        {% include "partners.html" %}
-    </div>
-</article>
-<article class="h-screen">
-    <div class="w-[1080px] m-auto">
-        {% include "faq.html" %}
+
+<article class="absolute top-[400vh] left-0 w-full h-[175vh] z-20">
+    <div class="relative w-full max-w-[1080px] m-auto h-full border">
+        <div id="faq" class="asteroid asteroid-down absolute top-0 left-0 w-1/2 h-1/2 border">
+            <div class="absolute top-0 left-0 right-0 bottom-0 z-30 w-full h-full flex flex-col justify-center items-start">{% include "faq.html" %}</div>
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 z-20 w-full h-full scale-[250%] z-0">
+            <path fill="#0D0328" d="M60.9,-23.4C66.4,-2.8,49.8,21.4,29.2,35.2C8.6,49,-16,52.4,-37.2,39.7C-58.3,27,-76.1,-1.8,-69.4,-24.1C-62.6,-46.4,-31.3,-62.2,-1.8,-61.6C27.7,-61,55.4,-44,60.9,-23.4Z" transform="translate(100 100)" />
+            </svg>
+        </div>
+        <div id="faq2" class="asteroid asteroid-up absolute bottom-0 z-20 right-0 w-1/2 h-1/2 border">
+            <div class="absolute top-0 left-0 right-0 bottom-0 z-30 w-full h-full flex flex-col justify-center items-start">{% include "faq2.html" %}</div>
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 z-20 w-full h-full scale-[250%] z-0">
+            <path fill="#0D0328" d="M57,-20.5C63.1,0.2,49.8,25.2,28.1,41.7C6.4,58.2,-23.7,66.1,-45.3,52.7C-66.9,39.3,-80.1,4.5,-71.1,-20.2C-62.2,-44.9,-31.1,-59.6,-2.8,-58.6C25.4,-57.7,50.9,-41.3,57,-20.5Z" transform="translate(100 100)" />
+            </svg>
+        </div>
     </div>
 </article>
 

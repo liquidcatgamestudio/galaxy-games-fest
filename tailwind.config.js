@@ -14,9 +14,16 @@ module.exports = {
         boldonse: ['"Boldonse"', 'sans-serif'],
       },
       colors: {
-        tomato: '#e6482e',
-        yellowMain: '#fde047',
-        yellowLighter: '#fff085'
+        black: '#000000',
+        darkblue: '#030328',
+        blue: '#1618B7',
+        turquoise: '#4BD6B5',
+        white: '#DEDEE3',
+        lilac: '#A2A8D0',
+        darklilac: '#6971C1',
+        purple: '#702AA6',
+        pink: '#C531AF',
+        darkpurple: '#0D0328'
       }
     }
   },

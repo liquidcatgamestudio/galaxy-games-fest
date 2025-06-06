@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/src/font/Outfit.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Boldonse";
+  src: url("/src/font/Boldonse.ttf") format("truetype");
+  font-display: swap;
+}
+
+body {
+  font-weight: 300;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1em; }
+h3 { font-size: 1em; }
+h4 { font-size: 1em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; }
+
+p {
+  margin: 1em;
+}
+
+.border {
+  border: none!important;
+}
