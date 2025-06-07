@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+.border {
+  border: none!important;
+}
+
 body {
   font-weight: 300;
 }
@@ -26,9 +30,11 @@ h5 { font-size: 1em; }
 h6 { font-size: 1em; }
 
 p {
-  margin: 1em;
+  margin: 1em 0;
 }
 
-.border {
-  border: none!important;
+article {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
 }
