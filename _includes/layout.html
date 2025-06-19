@@ -7,33 +7,22 @@
 		<link rel="stylesheet" href="/assets/css/styles.css">
 	</head>
 	<body class="bg-slate-950 text-emerald-50 font-outfit overflow-x-hidden">
-		<!--<header class="fixed top-0 left-0 right-0 z-10 flex flex-col md:flex-row justify-between p-8">
-			<div class="hidden md:block">{{ title | default: "Galaxy Games Fest" }}</div>
-			<nav>
-				<ul class="flex flex-wrap gap-2 justify-between">
-					<li>About</li>
-					<li>Schedule</li>
-					<li>Partners</li>
-					<li>Faq</li>
-				</ul>
-			</nav>
-		</header>-->
+		<header class="fixed top-0 left-0 right-0 z-10 flex flex-col md:flex-row justify-between p-8">
+			<div><a href="/">{{ title | default: "Galaxy Games Fest" }}</a></div>
+			<div><a href="https://linktr.ee/LiquidCatStudio">Socials</a></div>
+		</header>
 		<main>
 			{{ content }}
 		</main>
 		<footer class="text-center p-8">
-			<div>
-				Galaxy Games Fest 2025
-			</div>
 		</footer>
 
-<script>
+<!--<script>
   var password = prompt("Enter password:");
   if (password !== "staging123") {
     document.body.innerHTML = "Unauthorized.";
   }
-</script>
-
+</script>-->
 
 <canvas id="starCanvas" class="fixed top-0 left-0 right-0 bottom-0 z-[-1]"></canvas>
 <script src="/src/js/starCanvas.js"></script>

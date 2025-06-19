@@ -2,6 +2,6 @@
 tags: about
 ---
 
-Where emerging talent meets industry legends. Galaxy Games Festival is a celebration of student innovation and industry collaboration, hosted at Macquarie University — Sydney’s hub for game development.
+# Galaxy Games Festival is a student focused event for emerging game developers within Australia.
 
-Showcase, connect, and shape the future of games in Australia.
+We have students and industry guests coming in for talks and showcases, from the games, art, music, and adjacent industries. Come and check out what it is like to work in the industry, and see what students have been making! 
