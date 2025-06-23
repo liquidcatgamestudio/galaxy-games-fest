@@ -9,7 +9,7 @@
     "watch:tailwind": "npx tailwindcss -i ./src/css/main.css -o ./_site/assets/css/styles.css --watch",
     "build:tailwind": "npx tailwindcss -i ./src/css/main.css -o ./_site/assets/css/styles.css",
     "build": "npm run build:tailwind && npm run build:eleventy",
-    "build-ghpages": "npx @11ty/eleventy --pathprefix=/galaxy-games-fest/"
+    "build-ghpages": "npx @11ty/eleventy"
   },
   "license": "MIT",
   "dependencies": {
