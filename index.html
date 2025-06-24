@@ -40,6 +40,32 @@ layout: layout.html
 
 <article class="h-screen md:h-[60vh] flex justify-end overflow-hidden md:overflow-visible">
     <div class="asteroid asteroid-down relative w-full md:w-1/2">
+        <div class="absolute top-0 left-0 right-0 bottom-0 z-10" >
+            <div class="flex flex-col justify-center items-start w-full h-full p-8">
+                {% include "faq.html" %}
+            </div>
+        </div>
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 w-full h-full scale-[250%] z-0" >
+            <path fill="#0D0328" stroke="#1f075f" stroke-width="0.25"d="M53.9,-17.4C61.2,4.9,52.5,32.6,33,47.1C13.6,61.6,-16.6,63,-37.1,48.7C-57.6,34.3,-68.4,4.3,-60.6,-18.8C-52.8,-41.8,-26.4,-57.9,-1.5,-57.4C23.3,-56.9,46.6,-39.8,53.9,-17.4Z" transform="translate(100 100)" />
+        </svg>
+    </div>
+</article>
+
+<article class="h-screen md:h-[60vh] flex justify-start overflow-hidden md:overflow-visible" >
+    <div class="asteroid asteroid-up relative w-full md:w-1/2">
+        <div class="absolute top-0 left-0 right-0 bottom-0 z-10">
+            <div class="flex flex-col justify-center items-start w-full h-full p-8">
+                {% include "faq2.html" %}
+            </div>
+        </div>
+        <svg viewBox="0 0 600 600" overflow="visible" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 w-full h-full z-0">
+            <path fill="#0D0328" stroke="#1f075f" stroke-width="0.25"d="M53.9,-17.4C61.2,4.9,52.5,32.6,33,47.1C13.6,61.6,-16.6,63,-37.1,48.7C-57.6,34.3,-68.4,4.3,-60.6,-18.8C-52.8,-41.8,-26.4,-57.9,-1.5,-57.4C23.3,-56.9,46.6,-39.8,53.9,-17.4Z" transform="translate(300 300) scale(7.5)" />
+        </svg>
+    </div>
+</article>
+
+<article class="h-screen md:h-[60vh] flex justify-end overflow-hidden md:overflow-visible">
+    <div class="asteroid asteroid-down relative w-full md:w-1/2">
         <div class="absolute top-0 left-0 right-0 bottom-0 z-10">
             <div class="flex flex-col justify-center items-start w-full h-full p-8">
                 {% include "schedule2.html" %}
@@ -58,34 +84,8 @@ layout: layout.html
                 {% include "partners.html" %}
             </div>
         </div>
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 w-full h-full scale-[250%] z-0">
-            <path fill="#0D0328" stroke="#1f075f" stroke-width="0.25"d="M53.9,-17.4C61.2,4.9,52.5,32.6,33,47.1C13.6,61.6,-16.6,63,-37.1,48.7C-57.6,34.3,-68.4,4.3,-60.6,-18.8C-52.8,-41.8,-26.4,-57.9,-1.5,-57.4C23.3,-56.9,46.6,-39.8,53.9,-17.4Z" transform="translate(100 100)" />
-        </svg>
-    </div>
-</article>
-
-<article class="h-screen md:h-[60vh] flex justify-end overflow-hidden md:overflow-visible">
-    <div class="asteroid asteroid-down relative w-full md:w-1/2">
-        <div class="absolute top-0 left-0 right-0 bottom-0 z-10">
-            <div class="flex flex-col justify-center items-start w-full h-full p-8">
-                {% include "faq.html" %}
-            </div>
-        </div>
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 w-full h-full scale-[250%] z-0">
-            <path fill="#0D0328" stroke="#1f075f" stroke-width="0.25"d="M53.9,-17.4C61.2,4.9,52.5,32.6,33,47.1C13.6,61.6,-16.6,63,-37.1,48.7C-57.6,34.3,-68.4,4.3,-60.6,-18.8C-52.8,-41.8,-26.4,-57.9,-1.5,-57.4C23.3,-56.9,46.6,-39.8,53.9,-17.4Z" transform="translate(100 100)" />
-        </svg>
-    </div>
-</article>
-
-<article class="h-screen md:h-[60vh] flex justify-start overflow-hidden md:overflow-visible">
-    <div class="asteroid asteroid-up relative w-full md:w-1/2">
-        <div class="absolute top-0 left-0 right-0 bottom-0 z-10">
-            <div class="flex flex-col justify-center items-start w-full h-full p-8">
-                {% include "faq2.html" %}
-            </div>
-        </div>
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 w-full h-full scale-[250%] z-0">
-            <path fill="#0D0328" stroke="#1f075f" stroke-width="0.25"d="M53.9,-17.4C61.2,4.9,52.5,32.6,33,47.1C13.6,61.6,-16.6,63,-37.1,48.7C-57.6,34.3,-68.4,4.3,-60.6,-18.8C-52.8,-41.8,-26.4,-57.9,-1.5,-57.4C23.3,-56.9,46.6,-39.8,53.9,-17.4Z" transform="translate(100 100)" />
+        <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" overflow="visible" class="absolute top-0 left-0 right-0 bottom-0 w-full h-full z-0">
+            <path fill="#0D0328" stroke="#1f075f" stroke-width="0.25"d="M53.9,-17.4C61.2,4.9,52.5,32.6,33,47.1C13.6,61.6,-16.6,63,-37.1,48.7C-57.6,34.3,-68.4,4.3,-60.6,-18.8C-52.8,-41.8,-26.4,-57.9,-1.5,-57.4C23.3,-56.9,46.6,-39.8,53.9,-17.4Z" transform="translate(300 300) scale(8)" />
         </svg>
     </div>
 </article>
