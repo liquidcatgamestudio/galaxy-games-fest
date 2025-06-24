@@ -4,7 +4,7 @@ tags: faq2
 
 # Why should I attend?
 
-To present your work, learn from industry pros, network with studios, and be inspired by the future of Australian games.
+To see other fellow students' work, learn from industry pros, network with studios, and be inspired by the future of Australian games.
 
 # Is it only for students?
 
