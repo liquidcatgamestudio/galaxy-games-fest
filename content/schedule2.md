@@ -1,7 +1,7 @@
 ---
 tags: schedule2
 ---
-# Events
+# **Events**
 ### • Two concurrent industry talks streams in separate theatres
 
 ### • Live demos: 2D, 3D, and music creation
