@@ -5,7 +5,8 @@ module.exports = {
     "./*.html",
     "./privacy/*.html",
     "./posts/**/*.md",
-    "./posts/**/*.html"
+    "./posts/**/*.html",
+    "./src/**/*.html"
   ],
   theme: {
     extend: {
@@ -23,7 +24,8 @@ module.exports = {
         darklilac: '#6971C1',
         purple: '#702AA6',
         pink: '#C531AF',
-        darkpurple: '#0D0328'
+        darkpurple: '#0D0328',
+        borderpurple: '#1f075f'
       }
     }
   },
