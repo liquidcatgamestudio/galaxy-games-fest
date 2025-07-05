@@ -26,9 +26,17 @@
         </ul>
       </div>
 		</header>
-		<main>
-			{{ content }}
-		</main>
+    <main class="{% if not isLanding %}flex justify-center{% endif %}">
+      {% if not isLanding %}
+        <div class="w-full md:w-1/2 bg-darkpurple border-borderpurple border-2 mt-32 p-8 rounded">
+          {{ content }}
+        </div>
+      {% else %}
+        <div class="p-8">
+          {{ content }}
+        </div>
+      {% endif %}
+    </main>
 		<footer class="text-center p-8">
 		</footer>
 
