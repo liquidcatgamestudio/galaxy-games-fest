@@ -2,11 +2,22 @@
 title: Games
 ---
 
-<article>
-    <div class="asteroid relative w-full flex justify-center">
-        <div class="w-[90vw] bg-darkpurple border-borderpurple border-2 mt-32 p-8 rounded">
-            <div>{% include "games.html" %}</div>
-            <div>{% include "games2.html" %}</div>
+<div>{% include "games.html" %}</div>
+
+<div class="flex flex-col gap-8">
+    {% for game in collections.game %}
+    <div class="flex flex-row gap-8">
+        <div class="aspect-video w-64 h-full bg-borderpurple">
+            {% if game.data.thumbnail %}
+            <img src="{{ game.data.thumbnail }}" alt="Thumbnail for {{ game.data.title }}" class="w-full h-full object-cover">
+            {% endif %}
+        </div>
+        <div>
+            <h2><a href="{{ game.url }}">{{ game.data.title }}</a></h2>
+            <h3 class="text-sm text-gray-400">{{ game.data.author }}</h3>
         </div>
     </div>
-</article>
+    {% endfor %}
+</div>
+
+<div>{% include "games2.html" %}</div>
