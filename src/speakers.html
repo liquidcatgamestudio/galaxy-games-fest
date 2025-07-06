@@ -6,21 +6,55 @@ isLanding: true
 
 <div class="flex justify-center mb-64">
     <div class="w-full md:w-1/2">
-        <div class="bg-darkpurple border-borderpurple border-2 p-8 rounded mt-32 mb-8">
+        <div class="bg-darkpurple border-borderpurple border-2 rounded p-8 mt-8 mb-8">
             <div>{% include "speakers.html" %}</div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             {% for speaker in collections.speaker %}
-            <div class="flex flex-row gap-8">
-                <div class="aspect-square rounded-full overflow-hidden w-32 bg-borderpurple">
-                    {% if speaker.data.thumbnail %}
-                    <img src="{{ speaker.data.thumbnail }}" alt="Thumbnail for {{ speaker.data.name }}" class="w-full h-full object-cover">
-                    {% endif %}
+            <div class="flex flex-row gap-8 items-center">
+                <div>
+                    <div class="aspect-square rounded-full overflow-hidden w-32 h-32 bg-borderpurple border-borderpurple border-2 rounded">
+                        {% if speaker.data.thumbnail %}
+                        <img src="{{ speaker.data.thumbnail }}" alt="Thumbnail for {{ speaker.data.name }}" class="w-full h-full object-cover">
+                        {% endif %}
+                    </div>
                 </div>
-                <div class="flex flex-col justify-center w-full">
+                <div class="flex flex-col justify-center w-full p-2 bg-darkpurple border-borderpurple border-2 rounded">
                     <h3><a href="{{ speaker.url }}">{{ speaker.data.name }}</a></h3>
-                    <h4 class="text-sm text-gray-400">{{ speaker.data.company }}</h4>
+                    <h4 class="text-sm">{{ speaker.data.company }}</h4>
+                    <div class="text-xs text-gray-400">
+                    <div>
+                        {% if speaker.data.schedule_room_a %}
+                        <span>Room A:
+                            {% for time in speaker.data.schedule_room_a %}
+                            {{ time | date: "%-I:%M%P" }}{% unless forloop.last %}, {% endunless %}
+                            {% endfor %}
+                        </span>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        {% if speaker.data.schedule_room_b %}
+                        <span>Room B:
+                            {% for time in speaker.data.schedule_room_b %}
+                            {{ time | date: "%-I:%M%P" }}{% unless forloop.last %}, {% endunless %}
+                            {% endfor %}
+                        </span>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        {% if speaker.data.schedule_live_showcase %}
+                        <span>Live Showcase:
+                            {% for time in speaker.data.schedule_live_showcase %}
+                            {{ time | date: "%-I:%M%P" }}{% unless forloop.last %}, {% endunless %}
+                            {% endfor %}
+                        </span>
+                        {% endif %}
+                    </div>
+                    </div>
+
                 </div>
             </div>
             {% endfor %}
