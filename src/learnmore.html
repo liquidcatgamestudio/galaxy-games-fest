@@ -4,10 +4,114 @@ title: Learn More
 
 <div>{% include "learnmore.html" %}</div>
 
+{% assign allSlotsRoomA = "" %}
+
+{% for speaker in collections.speaker %}
+  {% if speaker.data.schedule_room_a %}
+    {% for time in speaker.data.schedule_room_a %}
+      {% assign entry = time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company %}
+      {% assign allSlotsRoomA = allSlotsRoomA | append: entry | append: "%%" %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% assign slotArray = allSlotsRoomA | split: "%%" %}
+{% assign slotArray = slotArray | sort %}
+
+<h2>Room A</h2>
+<p>
+  <div>
+    {% for item in slotArray %}
+      {% unless item == "" %}
+        {% assign parts = item | split: "||" %}
+        {% assign time = parts[0] %}
+        {% assign name = parts[1] %}
+        {% assign company = parts[2] %}
+        <div>
+          <span><strong>{{ time | date: "%-I:%M%P" }}</strong></span>
+          —
+          <span>{{ name }}</span>
+          <span class="text-xs text-gray-400">{{ company }}</span>
+        </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</p>
+
+{% assign allSlotsRoomB = "" %}
+
+{% for speaker in collections.speaker %}
+  {% if speaker.data.schedule_room_b %}
+    {% for time in speaker.data.schedule_room_b %}
+      {% assign entry = time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company %}
+      {% assign allSlotsRoomB = allSlotsRoomB | append: entry | append: "%%" %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% assign slotArrayB = allSlotsRoomB | split: "%%" %}
+{% assign slotArrayB = slotArrayB | sort %}
+
+<h2>Room B</h2>
+<p>
+  <div>
+    {% for item in slotArrayB %}
+      {% unless item == "" %}
+        {% assign parts = item | split: "||" %}
+        {% assign time = parts[0] %}
+        {% assign name = parts[1] %}
+        {% assign company = parts[2] %}
+        <div>
+          <span><strong>{{ time | date: "%-I:%M%P" }}</strong></span>
+          —
+          <span>{{ name }}</span>
+          <span class="text-xs text-gray-400">{{ company }}</span>
+        </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</p>
+
+{% assign allSlotsLiveShowcase = "" %}
+
+{% for speaker in collections.speaker %}
+  {% if speaker.data.schedule_live_showcase %}
+    {% for time in speaker.data.schedule_live_showcase %}
+      {% assign entry = time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company %}
+      {% assign allSlotsLiveShowcase = allSlotsLiveShowcase | append: entry | append: "%%" %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% assign slotArrayLS = allSlotsLiveShowcase | split: "%%" %}
+{% assign slotArrayLS = slotArrayLS | sort %}
+
+<h2>Live Showcase</h2>
+<p>
+  <div>
+    {% for item in slotArrayLS %}
+      {% unless item == "" %}
+        {% assign parts = item | split: "||" %}
+        {% assign time = parts[0] %}
+        {% assign name = parts[1] %}
+        {% assign company = parts[2] %}
+        <div>
+          <span><strong>{{ time | date: "%-I:%M%P" }}</strong></span>
+          —
+          <span>{{ name }}</span>
+          <span class="text-xs text-gray-400">{{ company }}</span>
+        </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</p>
+
 <div style="width: 100%;">
-<div style="display: flex; justify-content: center; ">
-<a href="https://events.humanitix.com/galaxy-games-fest-25" style="text-decoration: none!important;"><div style="padding: 2vw; margin: 1vw; background-color:#DEDEE3; justify-content: center; text-align: center; font-size: 2rem; color: #0D0328; border-radius: 20px;" >Get Your Tickets</div></a>
-</div>
+  <div style="display: flex; justify-content: center;">
+    <a href="https://events.humanitix.com/galaxy-games-fest-25" style="text-decoration: none!important;">
+      <div style="padding: 2vw; margin: 1vw; background-color:#DEDEE3; justify-content: center; text-align: center; font-size: 2rem; color: #0D0328; border-radius: 20px;">Get Your Tickets</div>
+    </a>
+  </div>
 </div>
 
 <div>{% include "learnmore2.html" %}</div>
