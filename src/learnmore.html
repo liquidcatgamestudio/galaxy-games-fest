@@ -28,7 +28,7 @@ title: Learn More
         {% assign name = parts[1] %}
         {% assign company = parts[2] %}
         <div>
-          <span><strong>{{ time | date: "%-I:%M%P" }}</strong></span>
+          <span><strong>{{ time | sydneyTime  }}</strong></span>
           —
           <span>{{ name }}</span>
           <span class="text-xs text-gray-400">{{ company }}</span>
@@ -62,7 +62,7 @@ title: Learn More
         {% assign name = parts[1] %}
         {% assign company = parts[2] %}
         <div>
-          <span><strong>{{ time | date: "%-I:%M%P" }}</strong></span>
+          <span><strong>{{ time | sydneyTime }}</strong></span>
           —
           <span>{{ name }}</span>
           <span class="text-xs text-gray-400">{{ company }}</span>
@@ -96,7 +96,7 @@ title: Learn More
         {% assign name = parts[1] %}
         {% assign company = parts[2] %}
         <div>
-          <span><strong>{{ time | date: "%-I:%M%P" }}</strong></span>
+          <span><strong>{{ time | sydneyTime }}</strong></span>
           —
           <span>{{ name }}</span>
           <span class="text-xs text-gray-400">{{ company }}</span>

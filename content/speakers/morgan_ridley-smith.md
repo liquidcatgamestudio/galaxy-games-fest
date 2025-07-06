@@ -4,9 +4,9 @@ company: Freelance Composer
 thumbnail: /src/img/speakers/morgan_ridley-smith.jpeg
 schedule_room_a: 
 schedule_room_b:
-  - 2025-08-02 15:00:00 +1000
+  - "2025-08-02T15:00:00+10:00"
 schedule_live_showcase: 
-  - 2025-08-02 11:00:00 +1000
+  - "2025-08-02T11:00:00+10:00"
 ---
 
 # Morgan Ridley-Smith
