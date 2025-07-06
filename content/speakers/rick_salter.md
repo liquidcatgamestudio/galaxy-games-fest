@@ -1,7 +1,7 @@
 ---
 name: Rick Salter
 company: Co-founder and Creative Director | Hojo Studio
-thumbnail: /src/img/speakers/Rick Salter.jpg
+thumbnail: /src/img/speakers/rick_salter.jpg
 schedule_room_a: 
 schedule_room_b:
   - 2025-08-02 11:00:00 +1000

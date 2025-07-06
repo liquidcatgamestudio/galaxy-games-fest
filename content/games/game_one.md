@@ -1,7 +1,7 @@
 ---
 title: Game One
 author: Game One Studios
-thumbnail: /src/img/notion.png
+thumbnail: 
 ---
 
 # Game One

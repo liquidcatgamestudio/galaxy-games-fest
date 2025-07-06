@@ -1,7 +1,7 @@
 ---
 name: Luke Ledwich
 company: Engineering Lead | Riot Games
-thumbnail: /src/img/speakers/Luke Ledwich.png
+thumbnail: /src/img/speakers/luke_ledwich.png
 schedule_room_a:
   - 2025-08-02 10:30:00 +1000
   - 2025-08-02 11:00:00 +1000

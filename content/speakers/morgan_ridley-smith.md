@@ -1,7 +1,7 @@
 ---
 name: Morgan Ridley-Smith
 company: Freelance Composer 
-thumbnail: /src/img/speakers/Morgan Ridley-Smith.jpeg
+thumbnail: /src/img/speakers/morgan_ridley-smith.jpeg
 schedule_room_a: 
 schedule_room_b:
   - 2025-08-02 14:00:00 +1000

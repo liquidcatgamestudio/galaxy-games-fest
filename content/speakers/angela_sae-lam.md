@@ -1,7 +1,7 @@
 ---
 name: Angela Sae-Lam
 company: Professional 3D Artist and Teacher
-thumbnail: /src/img/speakers/Angela Sae-Lam.png
+thumbnail: /src/img/speakers/angela_sae-lam.png
 schedule_room_a:
   - 2025-08-02 12:00:00 +1000
 schedule_room_b: 
