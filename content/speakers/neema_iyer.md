@@ -3,8 +3,10 @@ name: Neema Iyer
 company: Creative Technologist
 thumbnail: /src/img/speakers/neema_iyer.jpg
 schedule_room_a:
-  - "2025-08-02T12:30:00+10:00"
-  - "2025-08-02T15:00:00+10:00"
+  - time: "2025-08-02T12:30:00+10:00"
+    title: "Interview"
+  - time: "2025-08-02T15:00:00+10:00"
+    title: "Diversity in Games"
 schedule_room_b:
 schedule_live_showcase:
 talk_name:

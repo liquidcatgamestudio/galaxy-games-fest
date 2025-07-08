@@ -3,10 +3,13 @@ name: Luke Ledwich
 company: Engineering Lead | Riot Games
 thumbnail: /src/img/speakers/luke_ledwich.png
 schedule_room_a:
-  - "2025-08-02T10:30:00+10:00"
-  - "2025-08-02T11:00:00+10:00"
+  - time: "2025-08-02T10:30:00+10:00"
+    title: "Keynote"
+  - time: "2025-08-02T11:00:00+10:00"
+    title: "Talk"
 schedule_room_b:
-  - "2025-08-02T10:30:00+10:00"
+  - time: "2025-08-02T10:30:00+10:00"
+    title: "Keynote"
 schedule_live_showcase: 
 ---
 

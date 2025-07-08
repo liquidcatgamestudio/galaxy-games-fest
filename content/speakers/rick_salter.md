@@ -4,7 +4,8 @@ company: Co-founder and Creative Director | Hojo Studio
 thumbnail: /src/img/speakers/rick_salter.jpg
 schedule_room_a: 
 schedule_room_b:
-  - "2025-08-02T11:00:00+10:00"
+  - time: "2025-08-02T11:00:00+10:00"
+    title: "Talk"
 schedule_live_showcase: 
 ---
 

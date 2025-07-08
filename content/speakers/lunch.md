@@ -1,11 +1,13 @@
 ---
-name: ====== LUNCH ======
+name: 
 company: Take a break and eat food | Stay hydrated!
 thumbnail:
 schedule_room_a:
-  - "2025-08-02T13:00:00+10:00"
+  - time: "2025-08-02T13:00:00+10:00"
+    title: "====== LUNCH ======"
 schedule_room_b:
-  - "2025-08-02T13:00:00+10:00"
+  - time: "2025-08-02T13:00:00+10:00"
+    title: "====== LUNCH ======"
 schedule_live_showcase:
 ---
 

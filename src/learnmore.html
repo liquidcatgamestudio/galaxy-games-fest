@@ -8,8 +8,8 @@ title: Learn More
 
 {% for speaker in collections.speaker %}
   {% if speaker.data.schedule_room_a %}
-    {% for time in speaker.data.schedule_room_a %}
-      {% assign entry = time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company %}
+    {% for slot in speaker.data.schedule_room_a %}
+      {% assign entry = slot.time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company | append: "||" | append: slot.title %}
       {% assign allSlotsRoomA = allSlotsRoomA | append: entry | append: "%%" %}
     {% endfor %}
   {% endif %}
@@ -27,12 +27,11 @@ title: Learn More
         {% assign time = parts[0] %}
         {% assign name = parts[1] %}
         {% assign company = parts[2] %}
-        <div>
-          <span><strong>{{ time | sydneyTime  }}</strong></span>
-          —
-          <span>{{ name }}</span>
-          <span class="text-xs text-gray-400">{{ company }}</span>
-        </div>
+        {% assign title = parts[3] %}
+        <span><strong>{{ time | sydneyTime }}</strong></span>: 
+        <span class="italic">{{ title }}</span> —
+        <span>{{ name }}</span>
+        <span class="text-xs text-gray-400">{{ company }}</span><br/>
       {% endunless %}
     {% endfor %}
   </div>
@@ -42,8 +41,8 @@ title: Learn More
 
 {% for speaker in collections.speaker %}
   {% if speaker.data.schedule_room_b %}
-    {% for time in speaker.data.schedule_room_b %}
-      {% assign entry = time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company %}
+    {% for slot in speaker.data.schedule_room_b %}
+      {% assign entry = slot.time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company | append: "||" | append: slot.title %}
       {% assign allSlotsRoomB = allSlotsRoomB | append: entry | append: "%%" %}
     {% endfor %}
   {% endif %}
@@ -61,12 +60,11 @@ title: Learn More
         {% assign time = parts[0] %}
         {% assign name = parts[1] %}
         {% assign company = parts[2] %}
-        <div>
-          <span><strong>{{ time | sydneyTime }}</strong></span>
-          —
-          <span>{{ name }}</span>
-          <span class="text-xs text-gray-400">{{ company }}</span>
-        </div>
+        {% assign title = parts[3] %}
+        <span><strong>{{ time | sydneyTime }}</strong></span>: 
+        <span class="italic">{{ title }}</span> —
+        <span>{{ name }}</span>
+        <span class="text-xs text-gray-400">{{ company }}</span><br/>
       {% endunless %}
     {% endfor %}
   </div>
@@ -76,8 +74,8 @@ title: Learn More
 
 {% for speaker in collections.speaker %}
   {% if speaker.data.schedule_live_showcase %}
-    {% for time in speaker.data.schedule_live_showcase %}
-      {% assign entry = time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company %}
+    {% for slot in speaker.data.schedule_live_showcase %}
+      {% assign entry = slot.time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company | append: "||" | append: slot.title %}
       {% assign allSlotsLiveShowcase = allSlotsLiveShowcase | append: entry | append: "%%" %}
     {% endfor %}
   {% endif %}
@@ -95,12 +93,11 @@ title: Learn More
         {% assign time = parts[0] %}
         {% assign name = parts[1] %}
         {% assign company = parts[2] %}
-        <div>
-          <span><strong>{{ time | sydneyTime }}</strong></span>
-          —
-          <span>{{ name }}</span>
-          <span class="text-xs text-gray-400">{{ company }}</span>
-        </div>
+        {% assign title = parts[3] %}
+        <span><strong>{{ time | sydneyTime }}</strong></span>: 
+        <span class="italic">{{ title }}</span> —
+        <span>{{ name }}</span>
+        <span class="text-xs text-gray-400">{{ company }}</span><br/>
       {% endunless %}
     {% endfor %}
   </div>

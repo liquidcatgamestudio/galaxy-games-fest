@@ -28,9 +28,9 @@ isLanding: true
                     <div>
                         {% if speaker.data.schedule_room_a %}
                         <span>Room A:
-                            {% for time in speaker.data.schedule_room_a %}
-                            {{ time | sydneyTime }}{% unless forloop.last %}, {% endunless %}
-                            {% endfor %}
+                        {% for slot in speaker.data.schedule_room_a %}
+                        {{ slot.time | sydneyTime }}: <em>{{ slot.title }}</em>{% unless forloop.last %}, {% endunless %}
+                        {% endfor %}
                         </span>
                         {% endif %}
                     </div>
@@ -38,9 +38,9 @@ isLanding: true
                     <div>
                         {% if speaker.data.schedule_room_b %}
                         <span>Room B:
-                            {% for time in speaker.data.schedule_room_b %}
-                            {{ time | sydneyTime }}{% unless forloop.last %}, {% endunless %}
-                            {% endfor %}
+                        {% for slot in speaker.data.schedule_room_b %}
+                        {{ slot.time | sydneyTime }}: <em>{{ slot.title }}</em>{% unless forloop.last %}, {% endunless %}
+                        {% endfor %}
                         </span>
                         {% endif %}
                     </div>
@@ -48,9 +48,9 @@ isLanding: true
                     <div>
                         {% if speaker.data.schedule_live_showcase %}
                         <span>Live Showcase:
-                            {% for time in speaker.data.schedule_live_showcase %}
-                            {{ time | sydneyTime }}{% unless forloop.last %}, {% endunless %}
-                            {% endfor %}
+                        {% for slot in speaker.data.schedule_live_showcase %}
+                        {{ slot.time | sydneyTime }}: <em>{{ slot.title }}</em>{% unless forloop.last %}, {% endunless %}
+                        {% endfor %}
                         </span>
                         {% endif %}
                     </div>

@@ -3,9 +3,11 @@ name: Cal Chiu
 company: Graphics Engineer | Unity Technologies
 thumbnail: /src/img/speakers/cal_chiu.jpg
 schedule_room_a:
-  - "2025-08-02T11:30:00+10:00"
+  - time: "2025-08-02T11:30:00+10:00"
+    title: "Interview"
 schedule_room_b:
-  - "2025-08-02T14:00:00+10:00"
+  - time: "2025-08-02T14:00:00+10:00"
+    title: "Talk"
 schedule_live_showcase: 
 ---
 
