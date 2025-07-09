@@ -3,9 +3,9 @@ name: Morgan Ridley-Smith
 company: Freelance Composer
 thumbnail: /src/img/speakers/morgan_ridley-smith.jpeg
 schedule_room_a:
-schedule_room_b:
   - time: "2025-08-02T15:00:00+10:00"
     title: "Talk"
+schedule_room_b:
 schedule_live_showcase:
   - time: "2025-08-02T11:00:00+10:00"
     title: "Music"
@@ -17,10 +17,10 @@ After two years in an engineering degree, Morgan decided to shift paths to embra
 
 ## Talks
 
-### 11:00AM - 12:30PM | Live Music Composing | Room C
+### 11:00AM - 1:00PM | Live Music Composing | Room C
 
 See Morgan compose music for games in person. Give her some inspiration for what to make or ask her some questions about what it is like to make music as a freelancer.
 
-### 3:00PM | Morgan talks about game music (TBC) | Room B
+### 3:00PM | Morgan talks about game music (TBC) | Room A
 
-Morgan talks about music
+Morgan talks about game music composing
