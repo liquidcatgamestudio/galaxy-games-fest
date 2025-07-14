@@ -9,7 +9,7 @@ schedule_room_b:
 schedule_live_showcase:
 ---
 
-# Sphia
+# Sophia
 
 My name is Sophia (Azusa in some online voids) and I'm a Quality Assurance Tester based in Sydney, Australia. Previously at Chaos Theory Games (Australian Studio of the Year 2024), and contracted to other well-known Aussie indies, I'm known for being a pest to development and design, with a meticulous eye for detail and being a loud (probably too loud) advocate for the player experience.
 
