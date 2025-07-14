@@ -23,7 +23,7 @@ They are currently a staff engineer at Riot Games working on building gameplay s
 
 ### 10:30AM | Keynote | Room A
 
-Luke will start the event off with a keynote on the event and his experience. He will explore and define the theme of Galaxy Games Festival: Exploring New Horizon.
+Luke will start the event off with a keynote on the event and his experience. He will explore and define the theme of Galaxy Games Festival: Exploring New Horizon. A keynote is a speech that sets the tone of the event so come in early to get your seats. Don't miss out on what Luke will say.
 
 ### 2:30PM | Opportunity Knocks | Room A
 

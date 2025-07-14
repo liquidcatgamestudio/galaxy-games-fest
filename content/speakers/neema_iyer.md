@@ -6,12 +6,9 @@ schedule_room_a:
 schedule_room_b:
   - time: "2025-08-02T11:30:00+10:00"
     title: "Interview"
-  - time: "2025-08-02T14:00:00+10:00"
-    title: "Diversity in Games"
 schedule_live_showcase:
 talk_name:
   - "Interview"
-  - "Diversity in games TBC"
 ---
 
 # Neema Iyer
@@ -20,10 +17,6 @@ Neema Iyer is an artist, technologist and coach. She is the founder of Pollicy, 
 
 ## Talks
 
-### 11:30AM | Interview | Room A
+### 12:30AM | Interview | Room A
 
 Meet Neema Iyer as we ask her questions about her journey into the industry and what she is doing now.
-
-### 2:00PM | Diversity in games (TBC) | Room B
-
-Neema gives an insite on diversity in the games industry.

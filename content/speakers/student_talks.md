@@ -1,7 +1,7 @@
 ---
 name: Sprint Talk Sessions
 company: Emerging Dev | Students | Indie Studios
-thumbnail:
+thumbnail: /src/img/speakers/sprint_logo.png
 schedule_room_a:
   - time: "2025-08-02T16:00:00+10:00"
     title: ""

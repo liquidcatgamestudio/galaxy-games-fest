@@ -4,7 +4,7 @@ company: Senior Lecturer | Macquarie University School of Computing
 thumbnail:
 schedule_room_a:
 schedule_room_b:
-  - time: "2025-08-02T12:00:00+10:00"
+  - time: "2025-08-02T14:00:00+10:00"
     title: "Talk"
 schedule_live_showcase:
 ---
@@ -17,6 +17,6 @@ Mitchell earned a Bachelor of Fine Arts in acting from Rutgers University, and a
 
 ## Talks
 
-### 12:00PM | Talk (TBC) | Room B
+### 2:00PM | Talk (TBC) | Room B
 
 Dr Mitchell McEwan will do a talk about games research.
