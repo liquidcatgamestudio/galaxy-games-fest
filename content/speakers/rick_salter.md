@@ -4,12 +4,12 @@ company: Co-founder and Creative Director | Hojo Studio
 thumbnail: /src/img/speakers/rick_salter.jpg
 schedule_room_a:
   - time: "2025-08-02T11:00:00+10:00"
-    title: "Talk"
+    title: "10 Signs you’re ready to commit to your game idea"
 schedule_room_b:
 schedule_live_showcase:
 ---
 
-# Rick Salter
+# Rick Salter (He/HIm)
 
 Rick Salter is the Co-founder and Creative Director of Hojo Studio, and also responsible for Hojo’s coding, music, sound design and animation.
 

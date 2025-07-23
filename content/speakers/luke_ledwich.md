@@ -5,13 +5,13 @@ thumbnail: /src/img/speakers/luke_ledwich.png
 schedule_room_a:
   - time: "2025-08-02T10:30:00+10:00"
     title: "Keynote"
-  - time: "2025-08-02T14:30:00+10:00"
+  - time: "2025-08-02T16:00:00+10:00"
     title: "Opportunity Knocks"
 schedule_room_b:
 schedule_live_showcase:
 ---
 
-# Luke Ledwich
+# Luke Ledwich (He/Him)
 
 Luke Ledwich is a grizzled engineer who has been making games since the last millennium.
 
@@ -25,7 +25,7 @@ They are currently a staff engineer at Riot Games working on building gameplay s
 
 Luke will start the event off with a keynote on the event and his experience. He will explore and define the theme of Galaxy Games Festival: Exploring New Horizon. A keynote is a speech that sets the tone of the event so come in early to get your seats. Don't miss out on what Luke will say.
 
-### 2:30PM | Opportunity Knocks | Room A
+### 4:00PM | Opportunity Knocks | Room A
 
 Opportunity knocks rarely and often quietly.
 
