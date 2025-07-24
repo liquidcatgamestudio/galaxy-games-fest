@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The Academy of Kinetic Magic</title>
+		<link rel="stylesheet" href="/assets/css/styles.css">
+	</head>
+	<body class="bg-slate-950 text-emerald-50 font-outfit overflow-x-hidden">
+    <img src="/src/img/base.png" class="fixed top-0 left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="base" />
+    <img src="/src/img/clouds.png" class="fixed bottom-0 left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="clouds" />
+    <img src="/src/img/lights.png" class="fixed top-[-15vh] left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="lights" />
+
+		<header class="fixed top-0 left-0 right-0 z-10 flex flex-col md:flex-row justify-between p-8 gap-4 bg-darkpurple md:bg-transparent">
+			<div class="text-center">
+        <ul>
+          <li><a href="/">Galaxy Games Fest</a></li>
+        </ul>
+      </div>
+			<div>
+        <ul class="flex flex-row justify-center gap-4">
+          <li><a href="https://linktr.ee/LiquidCatStudio">Socials</a></li>
+          <li><a href="/learnmore">Schedule</a></li>
+          <li><a href="/speakers">Speakers</a></li>
+          <!-- <li><a href="/games">Games</a></li> -->
+        </ul>
+      </div>
+		</header>
+    <main class="flex justify-center">
+      
+        <div class="w-full md:w-1/2 bg-darkpurple border-borderpurple border-2 mt-32 p-8 rounded">
+          <h1>The Academy of Kinetic Magic</h1>
+<p>The Academy of Kinetic Magic is a 3D Fantasy Puzzle Platformer with Object Manipulation Abilities. Take on the academy exam by completing 15 levels across 5 different modules and try to get the highest grade! The game features 6 different abilities that can help the player solve various puzzles, including:</p>
+<ul>
+<li>Grab Ability: Move and rotate any interactable object</li>
+<li>Gravity Ability: Freeze objects in mid-air and move them around</li>
+<li>Clone Ability: Duplicate an object, copying all of its properties</li>
+<li>Scale Ability: Augment the size and weight of objects</li>
+<li>Rewind Ability: Freeze the world and move objects through time</li>
+<li>Fuse Ability: Attach objects together</li>
+</ul>
+<p>Each Object Manipulation Ability can be used in various ways to solve puzzles and traverse environments. Use them to complete every level and achieve an S Grade!</p>
+<p>This project was created as part of the UNSW course COMP3421 Computer Graphics, where as a group of 5 people we created a game in Unreal Engine in 10 weeks.</p>
+<br>
+
+        </div>
+      
+    </main>
+		<footer class="text-center p-8">
+		</footer>
+
+<canvas id="starCanvas" class="fixed top-0 left-0 right-0 bottom-0 z-[-1]"></canvas>
+<script src="/src/js/starCanvas.js"></script>
+
+<script type="module">
+  import { animate, scroll } from 'https://cdn.jsdelivr.net/npm/motion@11/+esm';
+
+  console.log('Motion loaded');
+
+  const clouds = document.getElementById('clouds');
+  const lights = document.getElementById('lights');
+  const logo   = document.getElementById('logo');
+
+  const about_text = document.getElementById('about_text');
+  const schedule_text = document.getElementById('schedule_text');
+  const partners_text = document.getElementById('partners_text');
+  const faq_text = document.getElementById('faq_text');
+
+  const faq_body = document.getElementById('faq_body');
+  const faq2_body = document.getElementById('faq2_body');
+
+  if (clouds && lights && logo) {
+    /* --- PARALLAX --- */
+    scroll(
+      animate(clouds, { y: [0,  50] }, { duration: 1, easing: 'linear' })
+    );
+    scroll(
+      animate(lights, { y: [0, 500] }, { duration: 1, easing: 'linear' })
+    );
+	
+	// asteroids
+    scroll(
+      animate(".asteroid.asteroid-up", { y: [0, -100] }, { duration: 1, easing: 'linear' })
+    );
+    scroll(
+      animate(".asteroid.asteroid-down", { y: [0, 100] }, { duration: 1, easing: 'linear' })
+    );
+
+    /* --- LOGO FADE --- */
+    const fade = animate(
+      logo,
+      { opacity: [0, 1] },
+      { duration: 3, fill: 'both', easing: 'ease-out' }
+    );
+    scroll(fade, { offset: ['start 70%', 'start 40%'] });
+  } else {
+    console.warn('Parallax elements not found – check the IDs!');
+  }
+</script>
+
+
+
+
+	</body>
+</html>
