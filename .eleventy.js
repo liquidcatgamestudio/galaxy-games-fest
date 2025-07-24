@@ -12,6 +12,12 @@ module.exports = function (eleventyConfig) {
     }
     return dt.toFormat(format);
   });
+  
+  eleventyConfig.addCollection("game", function(collectionApi) {
+    return collectionApi.getFilteredByTag("game").sort((a, b) => {
+      return a.data.title.localeCompare(b.data.title);
+    });
+  });
 
   return {
     // Optional: directories, template formats, etc.
