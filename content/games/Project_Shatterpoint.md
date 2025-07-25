@@ -15,3 +15,5 @@ Project Shatterpoint combines the fluid movement of Titanfall with the destructi
 Get your friends, get online and get ready to deploy into the ultimate test of movement and combat skill!
 
 <br>
+
+![Project Shatterpoint](/src/img/games/Project_Shatterpoint.png)

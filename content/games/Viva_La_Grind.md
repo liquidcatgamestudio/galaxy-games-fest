@@ -15,3 +15,5 @@ The game is a blend between flow-state extreme sports games (Bomb Rush Cyberfunk
 Viva La Grind started life as a student project from the Academy of Interactive Entertainment (AIE) Advanced Diploma course. From there, it has been taken into the ‘Games for Business’ Graduate Diploma course at AIE to expand into a full commercial release.
 
 <br>
+
+![Viva La Grind](/src/img/games/Viva_La_Grind.jpg)

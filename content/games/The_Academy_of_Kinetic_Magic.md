@@ -20,3 +20,5 @@ Each Object Manipulation Ability can be used in various ways to solve puzzles an
 This project was created as part of the UNSW course COMP3421 Computer Graphics, where as a group of 5 people we created a game in Unreal Engine in 10 weeks.
 
 <br>
+
+![The Academy of Kinetic Magic](/src/img/games/The_Academy_of_Kinetic_Magic.png)

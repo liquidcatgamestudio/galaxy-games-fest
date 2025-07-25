@@ -19,3 +19,5 @@ At our display table, you’ll be able to:
 Whether you’re a gamer, game dev, or just curious about how community-driven content is reshaping the way we experience games, we’d love to show you what we’re building.
 
 <br>
+
+![Lumin](/src/img/games/Lumin.png)

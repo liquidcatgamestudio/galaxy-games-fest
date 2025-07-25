@@ -15,3 +15,5 @@ Currently, we have completed our base set and are slowly developing our second s
 The game is playable exclusively on Tabletop Simulator for the time being, with a possibility of producing physical cards in the distant future.
 
 <br>
+
+![Sigilbearers](/src/img/games/Sigilbearers.jpg)

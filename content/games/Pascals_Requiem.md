@@ -1,5 +1,5 @@
 ---
-title: Pascals Requiem
+title: "Pascal's Requiem"
 author: Playmakers
 thumbnail: /src/img/games/Pascals_Requiem.jpg
 ---
@@ -15,3 +15,5 @@ Join Pascal in this unforgettable story as you unravel the mystery behind MANA t
 Battle formidable foes, explore a rich and dynamic world filled with challenges, and seek out the lost memories that holds the key to your destiny. Dive into a dual-world narrative that intertwines fate and self-discovery, and engage in captivating mini-games with each encounter. Immerse yourself in an adventure as you and your future collide in a quest, where you emerge as your own hero.
 
 <br>
+
+![Pascals Requiem](/src/img/games/Pascals_Requiem.jpg)
