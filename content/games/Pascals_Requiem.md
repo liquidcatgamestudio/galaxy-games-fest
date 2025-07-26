@@ -16,4 +16,8 @@ Battle formidable foes, explore a rich and dynamic world filled with challenges,
 
 <br>
 
+[PLAY GAME](https://store.steampowered.com/app/3224780/Pascals_Requiem/)
+
+<br>
+
 ![Pascals Requiem](/src/img/games/Pascals_Requiem.jpg)

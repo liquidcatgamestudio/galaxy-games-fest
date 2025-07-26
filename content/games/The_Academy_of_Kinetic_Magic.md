@@ -21,4 +21,8 @@ This project was created as part of the UNSW course COMP3421 Computer Graphics, 
 
 <br>
 
+[PLAY GAME](https://infynidas.itch.io/the-academy-of-kinetic-magic)
+
+<br>
+
 ![The Academy of Kinetic Magic](/src/img/games/The_Academy_of_Kinetic_Magic.png)

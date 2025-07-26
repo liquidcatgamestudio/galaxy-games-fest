@@ -16,4 +16,8 @@ Viva La Grind started life as a student project from the Academy of Interactive 
 
 <br>
 
+[PLAY GAME](https://masked-moonlight.itch.io/viva-la-grind-demo)
+
+<br>
+
 ![Viva La Grind](/src/img/games/Viva_La_Grind.jpg)

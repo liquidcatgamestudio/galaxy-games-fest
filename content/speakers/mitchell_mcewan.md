@@ -1,7 +1,7 @@
 ---
 name: Dr Mitchell McEwan
 company: Senior Lecturer | Macquarie University School of Computing
-thumbnail:
+thumbnail: /src/img/speakers/mitchell_mcewan.jpeg
 schedule_room_a:
 schedule_room_b:
   - time: "2025-08-02T15:00:00+10:00"

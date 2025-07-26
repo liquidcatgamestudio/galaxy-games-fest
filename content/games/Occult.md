@@ -19,4 +19,8 @@ The current build showcases the core combat system with 3 levels (easy, medium, 
 
 <br>
 
+[PLAY GAME](https://kitkat5100.itch.io/occult)
+
+<br>
+
 ![Occult](/src/img/games/Occult.png)

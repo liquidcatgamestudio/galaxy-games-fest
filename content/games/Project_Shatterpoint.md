@@ -16,4 +16,8 @@ Get your friends, get online and get ready to deploy into the ultimate test of m
 
 <br>
 
+[PLAY GAME](https://tetrastudios.itch.io/project-shatterpoint)
+
+<br>
+
 ![Project Shatterpoint](/src/img/games/Project_Shatterpoint.png)

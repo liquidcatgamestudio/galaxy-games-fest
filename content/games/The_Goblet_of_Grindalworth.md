@@ -10,4 +10,8 @@ We will be showcasing some of the works of the members of Pixel Pasture which in
 
 <br>
 
+[PLAY GAME](https://pixelpasturestudio.itch.io/the-goblet-of-grindalworth)
+
+<br>
+
 ![The Goblet of Grindalworth](/src/img/games/The_Goblet_of_Grindalworth.jpg)

@@ -10,4 +10,8 @@ Displaying Hoppyscotch, a game made for the 2025 MQ Game Jam Represent. Hoppysco
 
 <br>
 
+[PLAY GAME](https://m1ra3.itch.io/hoppyscotch)
+
+<br>
+
 ![Hoppyscotch](/src/img/games/Hoppyscotch.png)

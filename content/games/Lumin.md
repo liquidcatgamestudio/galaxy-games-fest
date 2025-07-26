@@ -20,4 +20,8 @@ Whether you’re a gamer, game dev, or just curious about how community-driven c
 
 <br>
 
+[LUMIN](https://www.lumin.gg/)
+
+<br>
+
 ![Lumin](/src/img/games/Lumin.png)

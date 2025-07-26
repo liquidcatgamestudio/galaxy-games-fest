@@ -16,4 +16,8 @@ The game is playable exclusively on Tabletop Simulator for the time being, with 
 
 <br>
 
+[PLAY GAME](https://steamcommunity.com/sharedfiles/filedetails/?id=3346204372)
+
+<br>
+
 ![Sigilbearers](/src/img/games/Sigilbearers.jpg)
