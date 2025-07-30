@@ -5,7 +5,7 @@ thumbnail: /src/img/speakers/mitchell_mcewan.jpeg
 schedule_room_a:
 schedule_room_b:
   - time: "2025-08-02T15:00:00+10:00"
-    title: "Talk"
+    title: "From Acting to Academic: my pathway to Games User Research"
 schedule_live_showcase:
 ---
 
@@ -17,6 +17,6 @@ Mitchell earned a Bachelor of Fine Arts in acting from Rutgers University, and a
 
 ## Talks
 
-### 3:00PM | Talk (TBC) | Room B
+### 3:00PM | From Acting to Academic: my pathway to Games User Research | Room B
 
 Dr Mitchell McEwan will do a talk about games research.
