@@ -1,5 +1,5 @@
 ---
-title: Yoyo
+title: "Yoyo & Age Of War"
 author: Alex Piotrowski
 thumbnail: /src/img/games/yoyo_and_age_of_war.png
 ---
