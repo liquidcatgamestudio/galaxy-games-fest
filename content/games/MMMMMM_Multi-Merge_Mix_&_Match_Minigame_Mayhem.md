@@ -1,5 +1,5 @@
 ---
-title: "MMMMMM: Multi-Merge Mix & Match Minigame Mayhem"
+title: "MMMMMM"
 author: PARTYBOMB STUDIO
 thumbnail: /src/img/games/MMMMMM_Multi-Merge_Mix_&_Match_Minigame_Mayhem.png
 ---
