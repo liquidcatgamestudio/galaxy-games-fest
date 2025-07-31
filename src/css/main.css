@@ -55,3 +55,7 @@ a:after {
   z-index: 0;
   transition: 300ms ease;
 }
+
+iframe {
+  width: 100%;
+}

@@ -907,6 +907,10 @@ a:after {
   transition: 300ms ease;
 }
 
+iframe {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .md\:h-\[60vh\] {
     height: 60vh;
