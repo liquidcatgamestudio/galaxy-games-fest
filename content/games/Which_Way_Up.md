@@ -13,6 +13,7 @@ Each of our 12 Gravity Games feature their own unique bite-sized challenge where
 <br>
 
 [PLAY GAME](https://store.steampowered.com/app/2318660/Which_Way_Up_Galaxy_Games)
-[Website](https://whichwayup.info)
+
+Find out more here at their [Website](https://whichwayup.info).
 
 <iframe width="560" height="315" src="https://video.fastly.steamstatic.com/store_trailers/257126145/movie480_vp9.webm?t=1744704770" frameborder="0" allowfullscreen></iframe>
