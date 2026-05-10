@@ -1,5 +1,5 @@
 ---
-tags: partners
+tags: partners_2025
 ---
 
 # **Our Sponsors and Partners**

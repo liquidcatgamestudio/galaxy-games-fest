@@ -11,7 +11,6 @@ We have students in programming, art and music showcasing their amazing projects
 We have guest speakers from all over Australia coming in to give their perspective on the industry. Need advice or simply interested in making games? Interested in knowing what it’s like to work in the game and animation industry? Want tips on making your portfolio stand out? Or, do you just really want to see professionals do their thing? We have it all, there is something for everyone. Don’t miss the chance to hear from developers in Riot Games, Unity, Hojo Studio and many other studios coming to speak at our event.
 
 This is a hybrid event attended in-person or online. Get your free ticket today!
-# Event Starts 9:30AM
 
 ## Exhibition Floor
 

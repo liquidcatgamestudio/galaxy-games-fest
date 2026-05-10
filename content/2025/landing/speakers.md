@@ -1,5 +1,5 @@
 ---
-tags: speakers
+tags: speakers_2025
 ---
 
 # Speakers

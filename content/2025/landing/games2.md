@@ -1,4 +1,4 @@
 ---
-tags: games2
+tags: games2_2025
 ---
 

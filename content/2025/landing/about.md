@@ -1,5 +1,5 @@
 ---
-tags: about
+tags: about_2025
 ---
 
 # **Galaxy Games Festival is a student focused event for emerging game developers within Australia.**

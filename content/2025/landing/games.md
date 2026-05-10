@@ -1,5 +1,5 @@
 ---
-tags: games
+tags: games_2025
 ---
 
 # Games

@@ -1,5 +1,5 @@
 ---
-tags: schedule2
+tags: schedule2_2025
 ---
 # **Events**
 ### • Two concurrent industry talks streams in separate theatres

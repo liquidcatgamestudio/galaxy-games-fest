@@ -19,6 +19,18 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addCollection("speaker_2025", function (collectionApi) {
+    return collectionApi.getFilteredByTag("speaker_2025").sort((a, b) => {
+      return (a.data.name || "").localeCompare(b.data.name || "");
+    });
+  });
+
+  eleventyConfig.addCollection("game_2025", function (collectionApi) {
+    return collectionApi.getFilteredByTag("game_2025").sort((a, b) => {
+      return (a.data.title || "").localeCompare(b.data.title || "");
+    });
+  });
+
   return {
     // Optional: directories, template formats, etc.
     // default behavior is fine for this demo

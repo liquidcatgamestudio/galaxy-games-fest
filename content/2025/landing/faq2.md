@@ -1,5 +1,5 @@
 ---
-tags: faq2
+tags: faq2_2025
 ---
 
 # **Why should I attend?**
