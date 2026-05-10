@@ -618,6 +618,19 @@ video {
   z-index: -2;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mb-64 {
   margin-bottom: 16rem;
 }
@@ -668,6 +681,10 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .-translate-x-1\/2 {
@@ -857,6 +874,7 @@ body {
 }
 
 h1 {
+  text-align: center;
   font-size: 2em;
 }
 
