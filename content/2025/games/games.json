@@ -1,0 +1,5 @@
+{
+	"layout": "layout.html",
+	"tags": "game",
+	"permalink": "/2025/games/{{ page.fileSlug }}/"
+}

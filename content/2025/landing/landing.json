@@ -1,0 +1,5 @@
+{
+	"layout": "layout.html",
+	"tags": "landing",
+  "permalink": "/content/2025/{{ page.fileSlug }}/"
+}
