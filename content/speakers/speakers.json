@@ -1,5 +1,5 @@
 {
-	"layout": "layout.html",
-	"tags": "speaker",
-	"permalink": "/speakers/{{ page.fileSlug }}/"
+  "layout": "layout.html",
+  "tags": "speaker",
+  "permalink": "/content/speakers/{{ page.fileSlug }}/"
 }

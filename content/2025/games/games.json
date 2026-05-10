@@ -1,5 +1,5 @@
 {
-	"layout": "layout.html",
-	"tags": "game",
-	"permalink": "/2025/games/{{ page.fileSlug }}/"
+  "layout": "layout.html",
+  "tags": "game_2025",
+  "permalink": "/content/2025/games/{{ page.fileSlug }}/"
 }

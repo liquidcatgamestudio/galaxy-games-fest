@@ -1,5 +1,5 @@
 {
-	"layout": "layout.html",
-	"tags": "landing",
-  "permalink": "/content/2025/{{ page.fileSlug }}/"
+  "layout": "layout.html",
+  "tags": "landing_2025",
+  "permalink": "/content/2025/landing/{{ page.fileSlug }}/"
 }

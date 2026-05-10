@@ -1,5 +1,5 @@
 {
-	"layout": "layout.html",
-	"tags": "landing",
-  "permalink": "/content/{{ page.fileSlug }}/"
+  "layout": "layout.html",
+  "tags": "landing",
+  "permalink": "/content/landing/{{ page.fileSlug }}/"
 }
