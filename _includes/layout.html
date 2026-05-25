@@ -4,32 +4,62 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title | default: "Galaxy Games Fest" }}</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
 		<link rel="stylesheet" href="/assets/css/styles.css">
 	</head>
-	<body class="bg-slate-950 text-emerald-50 font-outfit overflow-x-hidden">
-    <img src="/src/img/base.png" class="fixed top-0 left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="base" />
-    <img src="/src/img/clouds.png" class="fixed bottom-0 left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="clouds" />
-    <img src="/src/img/lights.png" class="fixed top-[-15vh] left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="lights" />
+	<body class="overflow-x-hidden">
 
-		<header class="fixed top-0 left-0 right-0 z-10 flex flex-col md:flex-row justify-between p-8 gap-4 bg-darkpurple md:bg-transparent">
-			<div class="text-center">
-        <ul>
-          <li><a href="/">Galaxy Games Fest</a></li>
-        </ul>
+		<header class="fixed top-0 left-0 right-0 z-10 flex flex-col md:flex-row justify-between p-8 gap-4">
+			<div>
+        <div class="window">
+          <div class="title-bar">
+            <div class="title-bar-text">
+              Galaxy Games Fest
+            </div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
+            <section class="field-row" style="justify-content: flex-end">
+              <a href="/"><button>GO</button></a>
+            </section>
+          </div>
+        </div>
       </div>
 			<div>
+        <div class="window">
+          <div class="title-bar">
+            <div class="title-bar-text">
+              Galaxy Games Fest
+            </div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
+            <section class="field-row" style="justify-content: flex-end">
+              <a href="https://linktr.ee/LiquidCatStudio" target="_blank"><button>Socials</button></a>
+              <a href="/learnmore"><button>Schedule</button></a>
+              <a href="/speakers"><button>Speakers</button></a>
+              <a href="/games"><button>Games</button></a>
+              <a href="/2025"><button>2025</button></a>
+            </section>
+          </div>
+        </div>
+
         <ul class="flex flex-row justify-center gap-4">
-          <li><a href="https://linktr.ee/LiquidCatStudio" target="_blank">Socials</a></li>
-          <li><a href="/learnmore">Schedule</a></li>
-          <li><a href="/speakers">Speakers</a></li>
-          <li><a href="/games">Games</a></li>
-          <li><a href="/2025">2025</a></li>
+          <li></li>
         </ul>
       </div>
 		</header>
     <main class="{% if not isLanding %}flex justify-center{% endif %}">
       {% if not isLanding %}
-        <div class="w-full md:w-1/2 bg-darkpurple border-borderpurple border-2 mt-32 p-8 rounded">
+        <div class="w-full md:w-1/2 mt-32 p-8">
           {{ content }}
         </div>
       {% else %}

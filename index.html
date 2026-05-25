@@ -4,86 +4,62 @@ layout: layout.html
 isLanding: true
 ---
 
-<img src="/src/img/logo_white.png" class="absolute top-[50vh] left-1/2 w-full z-[-2] md:w-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0" id="logo" />
-
-<article class="h-screen">
-    <!-- lander --> 
-</article>
-
-<article class="h-screen md:h-[60vh] flex justify-end overflow-hidden md:overflow-visible">
-    <div class="asteroid asteroid-down relative w-full md:w-1/2">
-        <div class="absolute top-0 left-0 right-0 bottom-0 z-10">
-            <div class="flex flex-col justify-center items-start w-full h-full p-8">
-                <div class="text-center">{% include "schedule.html" %}</div>
-            </div>
-        </div>
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 w-full h-full scale-[250%] z-0">
-            <path fill="#0D0328" stroke="#1f075f" stroke-width="0.25"d="M53.9,-17.4C61.2,4.9,52.5,32.6,33,47.1C13.6,61.6,-16.6,63,-37.1,48.7C-57.6,34.3,-68.4,4.3,-60.6,-18.8C-52.8,-41.8,-26.4,-57.9,-1.5,-57.4C23.3,-56.9,46.6,-39.8,53.9,-17.4Z" transform="translate(100 100)" />
-        </svg>
+<div class="window">
+    <div class="title-bar">
+        <div class="title-bar-text">Schedule</div>
+        <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
     </div>
-</article>
-
-<article class="h-screen md:h-[60vh] flex justify-start overflow-hidden md:overflow-visible">
-    <div class="asteroid asteroid-up relative w-full md:w-1/2">
-        <div class="absolute top-0 left-0 right-0 bottom-0 z-10">
-            <div class="flex flex-col justify-center items-start w-full h-full p-8">
-                {% include "about.html" %}
-            </div>
-        </div>
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 w-full h-full scale-[250%] z-0">
-            <path fill="#0D0328" stroke="#1f075f" stroke-width="0.25"d="M53.9,-17.4C61.2,4.9,52.5,32.6,33,47.1C13.6,61.6,-16.6,63,-37.1,48.7C-57.6,34.3,-68.4,4.3,-60.6,-18.8C-52.8,-41.8,-26.4,-57.9,-1.5,-57.4C23.3,-56.9,46.6,-39.8,53.9,-17.4Z" transform="translate(100 100)" />
-        </svg>
+    <div class="window-body">
+        <p>{% include "schedule.html" %}</p>
     </div>
-</article>
+</div>
 
-<article class="h-screen md:h-[60vh] flex justify-end overflow-hidden md:overflow-visible">
-    <div class="asteroid asteroid-down relative w-full md:w-1/2">
-        <div class="absolute top-0 left-0 right-0 bottom-0 z-10" >
-            <div class="flex flex-col justify-center items-start w-full h-full p-8">
-                {% include "faq.html" %}
-            </div>
-        </div>
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 w-full h-full scale-[250%] z-0" >
-            <path fill="#0D0328" stroke="#1f075f" stroke-width="0.25"d="M53.9,-17.4C61.2,4.9,52.5,32.6,33,47.1C13.6,61.6,-16.6,63,-37.1,48.7C-57.6,34.3,-68.4,4.3,-60.6,-18.8C-52.8,-41.8,-26.4,-57.9,-1.5,-57.4C23.3,-56.9,46.6,-39.8,53.9,-17.4Z" transform="translate(100 100)" />
-        </svg>
+<div class="window">
+    <div class="title-bar">
+        <div class="title-bar-text">About</div>
+        <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
     </div>
-</article>
+    <div class="window-body">
+        <p>{% include "about.html" %}</p>
+    </div>
+</div>
 
-<article class="h-screen md:h-[60vh] flex justify-start overflow-hidden md:overflow-visible" >
-    <div class="asteroid asteroid-up relative w-full md:w-1/2">
-        <div class="absolute top-0 left-0 right-0 bottom-0 z-10">
-            <div class="flex flex-col justify-center items-start w-full h-full p-8">
-                {% include "faq2.html" %}
-            </div>
-        </div>
-        <svg viewBox="0 0 600 600" overflow="visible" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 w-full h-full z-0">
-            <path fill="#0D0328" stroke="#1f075f" stroke-width="0.25"d="M53.9,-17.4C61.2,4.9,52.5,32.6,33,47.1C13.6,61.6,-16.6,63,-37.1,48.7C-57.6,34.3,-68.4,4.3,-60.6,-18.8C-52.8,-41.8,-26.4,-57.9,-1.5,-57.4C23.3,-56.9,46.6,-39.8,53.9,-17.4Z" transform="translate(300 300) scale(7.5)" />
-        </svg>
+<div class="window">
+    <div class="title-bar">
+        <div class="title-bar-text">FAQ</div>
+        <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
     </div>
-</article>
+    <div class="window-body">
+        <p>{% include "faq.html" %}</p>
+    </div>
+</div>
 
-<article class="h-screen md:h-[60vh] flex justify-end overflow-hidden md:overflow-visible">
-    <div class="asteroid asteroid-down relative w-full md:w-1/2">
-        <div class="absolute top-0 left-0 right-0 bottom-0 z-10">
-            <div class="flex flex-col justify-center items-start w-full h-full p-8">
-                {% include "schedule2.html" %}
-            </div>
-        </div>
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0 right-0 bottom-0 w-full h-full scale-[250%] z-0">
-            <path fill="#0D0328" stroke="#1f075f" stroke-width="0.25"d="M53.9,-17.4C61.2,4.9,52.5,32.6,33,47.1C13.6,61.6,-16.6,63,-37.1,48.7C-57.6,34.3,-68.4,4.3,-60.6,-18.8C-52.8,-41.8,-26.4,-57.9,-1.5,-57.4C23.3,-56.9,46.6,-39.8,53.9,-17.4Z" transform="translate(100 100)" />
-        </svg>
+<div class="window">
+    <div class="title-bar">
+        <div class="title-bar-text">FAQ</div>
+        <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
     </div>
-</article>
+    <div class="window-body">
+        <p>{% include "faq2.html" %}</p>
+    </div>
+</div>
 
-<article class="h-screen md:h-[75vh] flex justify-start overflow-hidden md:overflow-visible">
-    <div class="asteroid asteroid-up relative w-full md:w-1/2">
-        <div class="absolute top-0 left-0 right-0 bottom-0 z-10">
-            <div class="flex flex-col justify-center items-start w-full h-full p-8">
-                {% include "partners.html" %}
-            </div>
-        </div>
-        <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" overflow="visible" class="absolute top-0 left-0 right-0 bottom-0 w-full h-full z-0">
-            <path fill="#0D0328" stroke="#1f075f" stroke-width="0.25"d="M53.9,-17.4C61.2,4.9,52.5,32.6,33,47.1C13.6,61.6,-16.6,63,-37.1,48.7C-57.6,34.3,-68.4,4.3,-60.6,-18.8C-52.8,-41.8,-26.4,-57.9,-1.5,-57.4C23.3,-56.9,46.6,-39.8,53.9,-17.4Z" transform="translate(300 300) scale(8)" />
-        </svg>
+<div class="window">
+    <div class="title-bar">
+        <div class="title-bar-text">Schedule</div>
+        <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
     </div>
-</article>
+    <div class="window-body">
+        <p>{% include "schedule2.html" %}</p>
+    </div>
+</div>
+
+<div class="window">
+    <div class="title-bar">
+        <div class="title-bar-text">Partners</div>
+        <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
+    </div>
+    <div class="window-body">
+        <p>{% include "partners.html" %}</p>
+    </div>
+</div>

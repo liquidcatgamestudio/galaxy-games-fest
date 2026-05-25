@@ -2,11 +2,11 @@
 title: Galaxy Games Fest 2025
 ---
 
-<p class="text-gray-400 text-sm mb-8">
+<p>
   Archive of the 2025 festival: schedule, speakers, and games showcase.
 </p>
 
-<h1 class="mb-6">Schedule</h1>
+<h1>Schedule</h1>
 
 {% assign allSlotsRoomA = "" %}
 
@@ -36,7 +36,7 @@ title: Galaxy Games Fest 2025
         <span><strong>{{ time | sydneyTime }}</strong></span>:
         <span class="italic">{{ title }}</span> —
         <span>{{ name }}</span>
-        <span class="text-xs text-gray-400">{{ company }}</span><br/>
+        <span class="text-gray-400">{{ company }}</span><br/>
       {% endunless %}
     {% endfor %}
   </div>
@@ -69,7 +69,7 @@ title: Galaxy Games Fest 2025
         <span><strong>{{ time | sydneyTime }}</strong></span>:
         <span class="italic">{{ title }}</span> —
         <span>{{ name }}</span>
-        <span class="text-xs text-gray-400">{{ company }}</span><br/>
+        <span class="text-gray-400">{{ company }}</span><br/>
       {% endunless %}
     {% endfor %}
   </div>
@@ -102,31 +102,31 @@ title: Galaxy Games Fest 2025
         <span><strong>{{ time | sydneyTime }}</strong></span>:
         <span class="italic">{{ title }}</span> —
         <span>{{ name }}</span>
-        <span class="text-xs text-gray-400">{{ company }}</span><br/>
+        <span class="text-gray-400">{{ company }}</span><br/>
       {% endunless %}
     {% endfor %}
   </div>
 </p>
 
-<hr class="border-borderpurple my-12"/>
+<hr />
 
-<h1 class="mb-6">Speakers</h1>
+<h1>Speakers</h1>
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
   {% for speaker in collections.speaker_2025 %}
     {% if speaker.data.name != "" %}
-      <div class="flex flex-row gap-8 items-center">
+      <div class="flex flex-row items-center gap-8">
         <div>
-          <div class="aspect-square rounded-full overflow-hidden w-32 h-32 bg-borderpurple border-borderpurple border-2 rounded">
+          <div class="aspect-square overflow-hidden w-32 h-32">
             {% if speaker.data.thumbnail %}
               <img src="{{ speaker.data.thumbnail }}" alt="Thumbnail for {{ speaker.data.name }}" class="w-full h-full object-cover">
             {% endif %}
           </div>
         </div>
-        <div class="flex flex-col justify-center w-full p-2 bg-darkpurple border-borderpurple border-2 rounded">
+        <div class="flex flex-col justify-center w-full p-2">
           <h3><a href="{{ speaker.url }}">{{ speaker.data.name }}</a></h3>
-          <h4 class="text-sm">{{ speaker.data.company }}</h4>
-          <div class="text-xs text-gray-400">
+          <h4>{{ speaker.data.company }}</h4>
+          <div class="text-gray-400">
             <div>
               {% if speaker.data.schedule_room_a %}
                 <span>Room A:
@@ -161,21 +161,21 @@ title: Galaxy Games Fest 2025
   {% endfor %}
 </div>
 
-<hr class="border-borderpurple my-12"/>
+<hr />
 
-<h1 class="mb-6">Games</h1>
+<h1>Games</h1>
 
-<div class="flex flex-col gap-8">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-8">
   {% for game in collections.game_2025 %}
-    <div class="flex flex-col md:flex-row gap-8">
-      <div class="aspect-video w-32 h-full bg-borderpurple shrink-0">
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <div class="aspect-video w-32 h-full shrink-0">
         {% if game.data.thumbnail %}
           <img src="{{ game.data.thumbnail }}" alt="Thumbnail for {{ game.data.title }}" class="w-full h-full object-cover">
         {% endif %}
       </div>
       <div>
         <h2><a href="{{ game.url }}">{{ game.data.title }}</a></h2>
-        <h3 class="text-sm text-gray-400">{{ game.data.author }}</h3>
+        <h3 class="text-gray-400">{{ game.data.author }}</h3>
       </div>
     </div>
   {% endfor %}
