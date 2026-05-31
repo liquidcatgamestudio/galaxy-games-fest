@@ -8,6 +8,9 @@
 		<link rel="stylesheet" href="/assets/css/styles.css">
 	</head>
 	<body class="overflow-x-hidden bg-black">
+    <img src="/src/img/2026/y2k-globe-16-9.png" class="fixed top-0 left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="base" />
+    <img src="/src/img/2026/y2k-globe-16-9-clouds.png" class="fixed bottom-0 left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="clouds" />
+    <img src="/src/img/2026/y2k-globe-16-9-shine.png" class="fixed top-[-15vh] left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="lights" />
 
 		<header class="fixed top-0 left-0 right-0 z-10 flex flex-col md:flex-row justify-between p-8 gap-4">
 			<div>
@@ -73,8 +76,8 @@
 		<footer class="text-center p-8">
 		</footer>
 
-<!--<canvas id="starCanvas" class="fixed top-0 left-0 right-0 bottom-0 z-[-1]"></canvas>
-<script src="/src/js/starCanvas.js"></script>-->
+<canvas id="starCanvas" class="fixed top-0 left-0 right-0 bottom-0 z-[-1]"></canvas>
+<script src="/src/js/starCanvas.js"></script>
 
 <script type="module">
   import { animate, scroll } from 'https://cdn.jsdelivr.net/npm/motion@11/+esm';
