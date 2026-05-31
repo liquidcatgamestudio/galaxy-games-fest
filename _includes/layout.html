@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/98.css" />
 		<link rel="stylesheet" href="/assets/css/styles.css">
 	</head>
-	<body class="overflow-x-hidden">
+	<body class="overflow-x-hidden bg-black">
 
 		<header class="fixed top-0 left-0 right-0 z-10 flex flex-col md:flex-row justify-between p-8 gap-4">
 			<div>
@@ -57,6 +57,7 @@
         </ul>
       </div>
 		</header>
+
     <main class="{% if not isLanding %}flex justify-center{% endif %}">
       {% if not isLanding %}
         <div class="w-full md:w-1/2 mt-32 p-8">
@@ -68,11 +69,12 @@
         </div>
       {% endif %}
     </main>
+
 		<footer class="text-center p-8">
 		</footer>
 
-<canvas id="starCanvas" class="fixed top-0 left-0 right-0 bottom-0 z-[-1]"></canvas>
-<script src="/src/js/starCanvas.js"></script>
+<!--<canvas id="starCanvas" class="fixed top-0 left-0 right-0 bottom-0 z-[-1]"></canvas>
+<script src="/src/js/starCanvas.js"></script>-->
 
 <script type="module">
   import { animate, scroll } from 'https://cdn.jsdelivr.net/npm/motion@11/+esm';
@@ -119,9 +121,6 @@
     console.warn('Parallax elements not found – check the IDs!');
   }
 </script>
-
-
-
 
 	</body>
 </html>

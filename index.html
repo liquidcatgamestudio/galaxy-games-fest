@@ -4,62 +4,92 @@ layout: layout.html
 isLanding: true
 ---
 
-<div class="window">
-    <div class="title-bar">
-        <div class="title-bar-text">Schedule</div>
-        <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
-    </div>
-    <div class="window-body">
-        <p>{% include "schedule.html" %}</p>
-    </div>
+<div class="h-[80vh]">
+    
 </div>
 
-<div class="window">
-    <div class="title-bar">
-        <div class="title-bar-text">About</div>
-        <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
-    </div>
-    <div class="window-body">
-        <p>{% include "about.html" %}</p>
-    </div>
-</div>
-
-<div class="window">
-    <div class="title-bar">
-        <div class="title-bar-text">FAQ</div>
-        <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
-    </div>
-    <div class="window-body">
-        <p>{% include "faq.html" %}</p>
-    </div>
-</div>
-
-<div class="window">
-    <div class="title-bar">
-        <div class="title-bar-text">FAQ</div>
-        <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
-    </div>
-    <div class="window-body">
-        <p>{% include "faq2.html" %}</p>
-    </div>
-</div>
-
-<div class="window">
-    <div class="title-bar">
-        <div class="title-bar-text">Schedule</div>
-        <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
-    </div>
-    <div class="window-body">
-        <p>{% include "schedule2.html" %}</p>
-    </div>
-</div>
-
-<div class="window">
-    <div class="title-bar">
-        <div class="title-bar-text">Partners</div>
-        <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
-    </div>
-    <div class="window-body">
-        <p>{% include "partners.html" %}</p>
-    </div>
-</div>
+<main class="w-[1080px] m-auto">
+    <article class="flex justify-end">
+        <div class="w-1/2 flex justify-center items-center">
+            <div class="window w-[500px] min-h-[300px]">
+                <div class="title-bar">
+                    <div class="title-bar-text">Schedule</div>
+                    <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
+                </div>
+                <div class="window-body text-lg p-8">
+                    <p>{% include "schedule.html" %}</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <article class="flex justify-start">
+        <div class="w-1/2 flex justify-center items-center">
+            <div class="window w-[500px] min-h-[300px]">
+                <div class="title-bar">
+                    <div class="title-bar-text">About</div>
+                    <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
+                </div>
+                <div class="window-body text-lg p-8">
+                    <p>{% include "about.html" %}</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <article class="flex justify-end">
+        <div class="w-1/2 flex justify-center items-center">
+            <div class="window w-[500px] min-h-[300px]">
+                <div class="title-bar">
+                    <div class="title-bar-text">FAQ</div>
+                    <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
+                </div>
+                <div class="window-body text-lg p-8">
+                    <p>{% include "faq.html" %}</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <article class="flex justify-start">
+        <div class="w-1/2 flex justify-center items-center">
+            <div class="window w-[500px] min-h-[300px]">
+                <div class="title-bar">
+                    <div class="title-bar-text">FAQ</div>
+                    <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
+                </div>
+                <div class="window-body text-lg p-8">
+                    <p>{% include "faq2.html" %}</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <article class="flex justify-end">
+        <div class="w-1/2 flex justify-center items-center">
+            <div class="window w-[500px] min-h-[300px]">
+                <div class="title-bar">
+                    <div class="title-bar-text">Schedule</div>
+                    <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
+                </div>
+                <div class="window-body text-lg p-8">
+                    <p>{% include "schedule2.html" %}</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <article class="flex justify-start">
+        <div class="w-1/2 flex justify-center items-center">
+            <div class="window w-[500px] min-h-[300px]">
+                <div class="title-bar">
+                    <div class="title-bar-text">Partners</div>
+                    <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
+                </div>
+                <div class="window-body text-lg p-8">
+                    <p>{% include "partners.html" %}</p>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
