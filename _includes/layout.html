@@ -9,8 +9,16 @@
 	</head>
 	<body class="overflow-x-hidden bg-black">
     <img src="/src/img/2026/y2k-globe-16-9.png" class="fixed top-0 left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="base" />
-    <img src="/src/img/2026/y2k-globe-16-9-clouds.png" class="fixed bottom-0 left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="clouds" />
-    <img src="/src/img/2026/y2k-globe-16-9-shine.png" class="fixed top-[-15vh] left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="lights" />
+    <div id="shine-ring" class="fixed top-[-350px] left-0 aspect-square right-0 z-[-2] pointer-events-none">
+      {% for shine in shineImages %}
+        <img
+          src="{{ shine.src }}"
+          class="shine absolute inset-0 w-full h-full object-cover"
+          data-angle="{{ shine.angle }}"
+          alt=""
+        />
+      {% endfor %}
+    </div>
 
 		<header class="fixed top-0 left-0 right-0 z-10 flex flex-col md:flex-row justify-between p-8 gap-4">
 			<div>
@@ -96,24 +104,26 @@
   const faq_body = document.getElementById('faq_body');
   const faq2_body = document.getElementById('faq2_body');
 
-  if (clouds && lights && logo) {
-    /* --- PARALLAX --- */
+  // Parallax for clouds
+  if (clouds) {
     scroll(
       animate(clouds, { y: [0,  50] }, { duration: 1, easing: 'linear' })
     );
+  } else {
+    console.warn('Clouds element not found – check the ID!');
+  }
+
+  // Parallax for lights
+  if (lights) {
     scroll(
       animate(lights, { y: [0, 500] }, { duration: 1, easing: 'linear' })
     );
-	
-	// asteroids
-    scroll(
-      animate(".asteroid.asteroid-up", { y: [0, -100] }, { duration: 1, easing: 'linear' })
-    );
-    scroll(
-      animate(".asteroid.asteroid-down", { y: [0, 100] }, { duration: 1, easing: 'linear' })
-    );
+  } else {
+    console.warn('Lights element not found – check the ID!');
+  }
 
-    /* --- LOGO FADE --- */
+  // Logo fade
+  if (logo) {
     const fade = animate(
       logo,
       { opacity: [0, 1] },
@@ -121,7 +131,34 @@
     );
     scroll(fade, { offset: ['start 70%', 'start 40%'] });
   } else {
-    console.warn('Parallax elements not found – check the IDs!');
+    console.warn('Logo element not found – check the ID!');
+  }
+
+  // Asteroid parallax (class-based, always run)
+  scroll(
+    animate(".asteroid.asteroid-up", { y: [0, -100] }, { duration: 1, easing: 'linear' })
+  );
+  scroll(
+    animate(".asteroid.asteroid-down", { y: [0, 100] }, { duration: 1, easing: 'linear' })
+  );
+
+  // Shine ring: each image fans outward along its angle as you scroll
+  const shineEls = document.querySelectorAll('.shine');
+  if (shineEls.length) {
+    const maxRadius = Math.min(window.innerWidth, window.innerHeight) * 0.45;
+    shineEls.forEach((el) => {
+      const angleRad = ((parseFloat(el.dataset.angle) - 90) * Math.PI) / 180;
+      scroll(
+        animate(
+          el,
+          {
+            x: [0, maxRadius * Math.cos(angleRad)],
+            y: [0, maxRadius * Math.sin(angleRad)],
+          },
+          { duration: 1, easing: 'linear' }
+        )
+      );
+    });
   }
 </script>
 
