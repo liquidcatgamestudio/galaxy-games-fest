@@ -11,14 +11,18 @@
     <img src="/src/img/2026/y2k-globe-16-9.png" class="fixed top-0 left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="base" />
     <div id="shine-ring" class="fixed top-[-350px] left-0 aspect-square right-0 z-[-2] pointer-events-none">
       {% for shine in shineImages %}
-        <img
-          src="{{ shine.src }}"
-          class="shine absolute inset-0 w-full h-full object-cover"
-          data-angle="{{ shine.angle }}"
-          alt=""
-        />
+        <div class="shine-parallax absolute inset-0" data-angle="{{ shine.angle }}">
+          <img
+            src="{{ shine.src }}"
+            class="shine absolute inset-0 w-full h-full object-cover will-change-transform"
+            alt=""
+          />
+        </div>
       {% endfor %}
     </div>
+
+    <canvas id="gridSphere" class="fixed bottom left-1/2 translate-x-[-50%] translate-y-[-32.5%] z-[-2] pointer-events-none" aria-hidden="true"></canvas>
+    <script src="/src/js/gridSphere.js"></script>
 
 		<header class="fixed top-0 left-0 right-0 z-10 flex flex-col md:flex-row justify-between p-8 gap-4">
 			<div>
@@ -94,7 +98,8 @@
 
   const clouds = document.getElementById('clouds');
   const lights = document.getElementById('lights');
-  const logo   = document.getElementById('logo');
+  const logo       = document.getElementById('logo');
+  const gridSphere = document.getElementById('gridSphere');
 
   const about_text = document.getElementById('about_text');
   const schedule_text = document.getElementById('schedule_text');
@@ -122,16 +127,21 @@
     console.warn('Lights element not found – check the ID!');
   }
 
-  // Logo fade
+  // Logo fades to 10% over the first screen height of scroll
   if (logo) {
-    const fade = animate(
-      logo,
-      { opacity: [0, 1] },
-      { duration: 3, fill: 'both', easing: 'ease-out' }
+    scroll(
+      animate(logo, { opacity: [1, 0.1] }, { duration: 1, easing: 'linear' }),
+      { offset: ['0vh', '100vh'] }
     );
-    scroll(fade, { offset: ['start 70%', 'start 40%'] });
   } else {
     console.warn('Logo element not found – check the ID!');
+  }
+
+  if (gridSphere) {
+    scroll(
+      animate(gridSphere, { opacity: [1, 0.1] }, { duration: 1, easing: 'linear' }),
+      { offset: ['0vh', '100vh'] }
+    );
   }
 
   // Asteroid parallax (class-based, always run)
@@ -142,22 +152,42 @@
     animate(".asteroid.asteroid-down", { y: [0, 100] }, { duration: 1, easing: 'linear' })
   );
 
-  // Shine ring: each image fans outward along its angle as you scroll
-  const shineEls = document.querySelectorAll('.shine');
-  if (shineEls.length) {
+  // Shine ring: scroll parallax on wrapper, ambient radial in/out on each image
+  const shineWrappers = document.querySelectorAll('.shine-parallax');
+  if (shineWrappers.length) {
     const maxRadius = Math.min(window.innerWidth, window.innerHeight) * 0.45;
-    shineEls.forEach((el) => {
-      const angleRad = ((parseFloat(el.dataset.angle) - 90) * Math.PI) / 180;
+    const drift = maxRadius * 0.12;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    shineWrappers.forEach((wrapper, i) => {
+      const img = wrapper.querySelector('.shine');
+      const angleRad = ((parseFloat(wrapper.dataset.angle) - 90) * Math.PI) / 180;
+      const dx = Math.cos(angleRad);
+      const dy = Math.sin(angleRad);
+
       scroll(
         animate(
-          el,
+          wrapper,
           {
-            x: [0, maxRadius * Math.cos(angleRad)],
-            y: [0, maxRadius * Math.sin(angleRad)],
+            x: [0, maxRadius * dx],
+            y: [0, maxRadius * dy],
           },
           { duration: 1, easing: 'linear' }
         )
       );
+
+      if (!reducedMotion && img) {
+        const duration = 5 + (i % 6) * 1.2;
+        const delay = (i * 0.55) % 4;
+        animate(
+          img,
+          {
+            x: [0, drift * dx, 0],
+            y: [0, drift * dy, 0],
+          },
+          { duration, delay, repeat: Infinity, ease: 'easeInOut' }
+        );
+      }
     });
   }
 </script>
