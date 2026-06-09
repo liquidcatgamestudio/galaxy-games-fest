@@ -26,7 +26,13 @@
     perspective: 2.8,
     lineAlpha: 0.5,
     shadowBlur: 12,
+    colorOrange: [255, 130, 45],
+    colorBlue: [90, 195, 255],
   };
+
+  function lerpColor(a, b, t) {
+    return a.map((c, i) => Math.round(c + (b[i] - c) * t));
+  }
 
   function resize() {
     dpr = window.devicePixelRatio || 1;
@@ -114,11 +120,14 @@
     };
   }
 
-  function drawLine(a, b) {
+  function drawLine(a, b, colorT) {
     if (a.z <= 0 || b.z <= 0) return;
 
     const fade = Math.min(1, (a.z + b.z) * 0.5 + 0.3);
-    ctx.strokeStyle = `rgba(255,255,255,${CONFIG.lineAlpha * fade})`;
+    const alpha = CONFIG.lineAlpha * fade;
+    const [r, g, bl] = lerpColor(CONFIG.colorOrange, CONFIG.colorBlue, colorT);
+    ctx.strokeStyle = `rgba(${r},${g},${bl},${alpha})`;
+    ctx.shadowColor = `rgba(${r},${g},${bl},${alpha})`;
     ctx.beginPath();
     ctx.moveTo(a.x, a.y);
     ctx.lineTo(b.x, b.y);
@@ -130,20 +139,23 @@
 
     ctx.lineWidth = 1;
     ctx.shadowBlur = CONFIG.shadowBlur;
-    ctx.shadowColor = "white";
 
     for (const ring of sphere.parallels) {
-      const projected = ring.map((p) => project(transformPoint(p)));
+      const transformed = ring.map((p) => transformPoint(p));
+      const projected = transformed.map((p) => project(p));
       for (let i = 0; i < projected.length; i++) {
-        const next = projected[(i + 1) % projected.length];
-        drawLine(projected[i], next);
+        const j = (i + 1) % projected.length;
+        const colorT = (transformed[i].x + transformed[j].x) * 0.25 + 0.5;
+        drawLine(projected[i], projected[j], colorT);
       }
     }
 
     for (const line of sphere.meridians) {
-      const projected = line.map((p) => project(transformPoint(p)));
+      const transformed = line.map((p) => transformPoint(p));
+      const projected = transformed.map((p) => project(p));
       for (let i = 0; i < projected.length - 1; i++) {
-        drawLine(projected[i], projected[i + 1]);
+        const colorT = (transformed[i].x + transformed[i + 1].x) * 0.25 + 0.5;
+        drawLine(projected[i], projected[i + 1], colorT);
       }
     }
 
