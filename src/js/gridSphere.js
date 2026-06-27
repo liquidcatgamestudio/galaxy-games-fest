@@ -18,7 +18,7 @@
   let rotationY = 0;
 
   const CONFIG = {
-    sizeFactor: 8,
+    sizeFactor: 2,
     meridians: 12,
     parallels: 8,
     tiltX: (15 * Math.PI) / 180,
