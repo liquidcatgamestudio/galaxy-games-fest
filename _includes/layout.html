@@ -21,7 +21,7 @@
       {% endfor %}
     </div>
 
-		<header class="fixed top-0 left-0 right-0 z-10 flex flex-col md:flex-row justify-between p-8 gap-4">
+		<header class="static md:fixed top-0 left-0 right-0 z-10 flex flex-col md:flex-row justify-between p-8 gap-4">
 			<div>
         <div class="window">
           <div class="title-bar">
@@ -54,12 +54,12 @@
             </div>
           </div>
           <div class="window-body">
-            <section class="field-row" style="justify-content: flex-end">
-              <a href="https://linktr.ee/LiquidCatStudio" target="_blank"><button>Socials</button></a>
-              <a href="/learnmore"><button>Schedule</button></a>
-              <a href="/speakers"><button>Speakers</button></a>
-              <a href="/games"><button>Games</button></a>
-              <a href="/2025"><button>2025</button></a>
+            <section class="field-row flex flex-wrap gap-2">
+              <a href="https://linktr.ee/LiquidCatStudio" target="_blank" class="m-0"><button>Socials</button></a>
+              <a href="/learnmore" class="m-0"><button>Schedule</button></a>
+              <a href="/speakers" class="m-0"><button>Speakers</button></a>
+              <a href="/games" class="m-0"><button>Games</button></a>
+              <a href="/2025" class="m-0"><button>2025</button></a>
             </section>
           </div>
         </div>
@@ -72,7 +72,7 @@
 
     <main class="{% if not isLanding %}flex justify-center{% endif %}">
       {% if not isLanding %}
-        <div class="w-full md:w-1/2 mt-32 p-8">
+        <div class="w-full md:w-3/4 xl:w-1/2 p-8 mt-0 md:mt-32">
           <div class="window min-h-[300px]">
             <div class="title-bar">
               <div class="title-bar-text"></div>

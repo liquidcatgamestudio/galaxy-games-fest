@@ -2,105 +2,107 @@
 title: Learn More
 ---
 
-<div>{% include "learnmore.html" %}</div>
+<div class="space-y-8">
+  <div>{% include "learnmore.html" %}</div>
 
-{% assign allSlotsRoomA = "" %}
-
-{% for speaker in collections.speaker %}
-  {% if speaker.data.schedule_room_a %}
-    {% for slot in speaker.data.schedule_room_a %}
-      {% assign entry = slot.time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company | append: "||" | append: slot.title %}
-      {% assign allSlotsRoomA = allSlotsRoomA | append: entry | append: "%%" %}
-    {% endfor %}
-  {% endif %}
-{% endfor %}
-
-{% assign slotArray = allSlotsRoomA | split: "%%" %}
-{% assign slotArray = slotArray | sort %}
-
-<h2>Room A</h2>
-<p>
-  <div>
-    {% for item in slotArray %}
-      {% unless item == "" %}
-        {% assign parts = item | split: "||" %}
-        {% assign time = parts[0] %}
-        {% assign name = parts[1] %}
-        {% assign company = parts[2] %}
-        {% assign title = parts[3] %}
-        <span><strong>{{ time | sydneyTime }}</strong></span>: 
-        <span class="italic">{{ title }}</span> —
-        <span>{{ name }}</span>
-        <span class="text-xs text-gray-500">{{ company }}</span><br/>
-      {% endunless %}
-    {% endfor %}
-  </div>
-</p>
-
-{% assign allSlotsRoomB = "" %}
-
-{% for speaker in collections.speaker %}
-  {% if speaker.data.schedule_room_b %}
-    {% for slot in speaker.data.schedule_room_b %}
-      {% assign entry = slot.time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company | append: "||" | append: slot.title %}
-      {% assign allSlotsRoomB = allSlotsRoomB | append: entry | append: "%%" %}
-    {% endfor %}
-  {% endif %}
-{% endfor %}
-
-{% assign slotArrayB = allSlotsRoomB | split: "%%" %}
-{% assign slotArrayB = slotArrayB | sort %}
-
-<h2>Room B</h2>
-<p>
-  <div>
-    {% for item in slotArrayB %}
-      {% unless item == "" %}
-        {% assign parts = item | split: "||" %}
-        {% assign time = parts[0] %}
-        {% assign name = parts[1] %}
-        {% assign company = parts[2] %}
-        {% assign title = parts[3] %}
-        <span><strong>{{ time | sydneyTime }}</strong></span>: 
-        <span class="italic">{{ title }}</span> —
-        <span>{{ name }}</span>
-        <span class="text-xs text-gray-500">{{ company }}</span><br/>
-      {% endunless %}
-    {% endfor %}
-  </div>
-</p>
-
-{% assign allSlotsLiveShowcase = "" %}
-
-{% for speaker in collections.speaker %}
-  {% if speaker.data.schedule_live_showcase %}
-    {% for slot in speaker.data.schedule_live_showcase %}
-      {% assign entry = slot.time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company | append: "||" | append: slot.title %}
-      {% assign allSlotsLiveShowcase = allSlotsLiveShowcase | append: entry | append: "%%" %}
-    {% endfor %}
-  {% endif %}
-{% endfor %}
-
-{% assign slotArrayLS = allSlotsLiveShowcase | split: "%%" %}
-{% assign slotArrayLS = slotArrayLS | sort %}
-
-<h2>Live Showcase</h2>
-<p>
-  <div>
-    {% for item in slotArrayLS %}
-      {% unless item == "" %}
-        {% assign parts = item | split: "||" %}
-        {% assign time = parts[0] %}
-        {% assign name = parts[1] %}
-        {% assign company = parts[2] %}
-        {% assign title = parts[3] %}
-        <span><strong>{{ time | sydneyTime }}</strong></span>: 
-        <span class="italic">{{ title }}</span> —
-        <span>{{ name }}</span>
-        <span class="text-xs text-gray-500">{{ company }}</span><br/>
-      {% endunless %}
-    {% endfor %}
-  </div>
-</p>
-
-<div>{% include "learnmore2.html" %}</div>
+  {% assign allSlotsRoomA = "" %}
+  
+  {% for speaker in collections.speaker %}
+    {% if speaker.data.schedule_room_a %}
+      {% for slot in speaker.data.schedule_room_a %}
+        {% assign entry = slot.time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company | append: "||" | append: slot.title %}
+        {% assign allSlotsRoomA = allSlotsRoomA | append: entry | append: "%%" %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+  
+  {% assign slotArray = allSlotsRoomA | split: "%%" %}
+  {% assign slotArray = slotArray | sort %}
+  
+  <h2>Room A</h2>
+  <p>
+    <div>
+      {% for item in slotArray %}
+        {% unless item == "" %}
+          {% assign parts = item | split: "||" %}
+          {% assign time = parts[0] %}
+          {% assign name = parts[1] %}
+          {% assign company = parts[2] %}
+          {% assign title = parts[3] %}
+          <span><strong>{{ time | sydneyTime }}</strong></span>: 
+          <span class="italic">{{ title }}</span> —
+          <span>{{ name }}</span>
+          <span class="text-xs text-gray-500">{{ company }}</span><br/>
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </p>
+  
+  {% assign allSlotsRoomB = "" %}
+  
+  {% for speaker in collections.speaker %}
+    {% if speaker.data.schedule_room_b %}
+      {% for slot in speaker.data.schedule_room_b %}
+        {% assign entry = slot.time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company | append: "||" | append: slot.title %}
+        {% assign allSlotsRoomB = allSlotsRoomB | append: entry | append: "%%" %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+  
+  {% assign slotArrayB = allSlotsRoomB | split: "%%" %}
+  {% assign slotArrayB = slotArrayB | sort %}
+  
+  <h2>Room B</h2>
+  <p>
+    <div>
+      {% for item in slotArrayB %}
+        {% unless item == "" %}
+          {% assign parts = item | split: "||" %}
+          {% assign time = parts[0] %}
+          {% assign name = parts[1] %}
+          {% assign company = parts[2] %}
+          {% assign title = parts[3] %}
+          <span><strong>{{ time | sydneyTime }}</strong></span>: 
+          <span class="italic">{{ title }}</span> —
+          <span>{{ name }}</span>
+          <span class="text-xs text-gray-500">{{ company }}</span><br/>
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </p>
+  
+  {% assign allSlotsLiveShowcase = "" %}
+  
+  {% for speaker in collections.speaker %}
+    {% if speaker.data.schedule_live_showcase %}
+      {% for slot in speaker.data.schedule_live_showcase %}
+        {% assign entry = slot.time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company | append: "||" | append: slot.title %}
+        {% assign allSlotsLiveShowcase = allSlotsLiveShowcase | append: entry | append: "%%" %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+  
+  {% assign slotArrayLS = allSlotsLiveShowcase | split: "%%" %}
+  {% assign slotArrayLS = slotArrayLS | sort %}
+  
+  <h2>Live Showcase</h2>
+  <p>
+    <div>
+      {% for item in slotArrayLS %}
+        {% unless item == "" %}
+          {% assign parts = item | split: "||" %}
+          {% assign time = parts[0] %}
+          {% assign name = parts[1] %}
+          {% assign company = parts[2] %}
+          {% assign title = parts[3] %}
+          <span><strong>{{ time | sydneyTime }}</strong></span>: 
+          <span class="italic">{{ title }}</span> —
+          <span>{{ name }}</span>
+          <span class="text-xs text-gray-500">{{ company }}</span><br/>
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </p>
+  
+  <div>{% include "learnmore2.html" %}</div>
+</div>

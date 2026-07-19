@@ -12,6 +12,6 @@
   font-family: 'Outfit', Courier, monospace;
 }
 
-.window button {
+.window .window-body button {
   font-family: "Pixelated MS Sans Serif", Arial;
 }
