@@ -24,6 +24,7 @@ title: Learn More
     <div>
       {% for item in slotArray %}
         {% unless item == "" %}
+        {% unless item[3] == "Education Panel"%}
           {% assign parts = item | split: "||" %}
           {% assign time = parts[0] %}
           {% assign name = parts[1] %}
@@ -33,6 +34,7 @@ title: Learn More
           <span class="italic">{{ title }}</span> —
           <span>{{ name }}</span>
           <span class="text-xs text-gray-500">{{ company }}</span><br/>
+        {% endunless %}
         {% endunless %}
       {% endfor %}
     </div>

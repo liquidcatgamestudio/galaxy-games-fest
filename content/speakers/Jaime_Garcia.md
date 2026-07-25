@@ -5,6 +5,8 @@ thumbnail: /src/img/speakers/Jaime_Garcia.webp
 schedule_room_a:
   - time: "2025-08-02T11:00:00+10:00"
     title: "Games Research: Turning Curiosity into a Career"
+  - time: "2025-08-02T14:00:00+10:00"
+    title: "Education Panel"
 schedule_room_b:
 schedule_live_showcase:
 ---
@@ -37,4 +39,4 @@ In this talk, we will cover some areas that we can do this, even if you don't co
 
 ### **2:00PM | Education Panel | Room A**
 
-A group of game maker educator are gathered together in one room to talk about what it is like teaching in the gaming space, how and why they starting teaching gaming and more. 
+A group of game maker educator are gathered together in one room to talk about what it is like teaching in the gaming space, how and why they starting teaching gaming and more.
