@@ -10,8 +10,10 @@ title: Learn More
   {% for speaker in collections.speaker %}
     {% if speaker.data.schedule_room_a %}
       {% for slot in speaker.data.schedule_room_a %}
-        {% assign entry = slot.time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company | append: "||" | append: slot.title %}
-        {% assign allSlotsRoomA = allSlotsRoomA | append: entry | append: "%%" %}
+        {% unless slot.show_in_schedule == false %}
+          {% assign entry = slot.time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company | append: "||" | append: slot.title %}
+          {% assign allSlotsRoomA = allSlotsRoomA | append: entry | append: "%%" %}
+        {% endunless %}
       {% endfor %}
     {% endif %}
   {% endfor %}
@@ -43,8 +45,10 @@ title: Learn More
   {% for speaker in collections.speaker %}
     {% if speaker.data.schedule_room_b %}
       {% for slot in speaker.data.schedule_room_b %}
-        {% assign entry = slot.time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company | append: "||" | append: slot.title %}
-        {% assign allSlotsRoomB = allSlotsRoomB | append: entry | append: "%%" %}
+        {% unless slot.show_in_schedule == false %}
+          {% assign entry = slot.time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company | append: "||" | append: slot.title %}
+          {% assign allSlotsRoomB = allSlotsRoomB | append: entry | append: "%%" %}
+        {% endunless %}
       {% endfor %}
     {% endif %}
   {% endfor %}
@@ -76,8 +80,10 @@ title: Learn More
   {% for speaker in collections.speaker %}
     {% if speaker.data.schedule_live_showcase %}
       {% for slot in speaker.data.schedule_live_showcase %}
-        {% assign entry = slot.time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company | append: "||" | append: slot.title %}
-        {% assign allSlotsLiveShowcase = allSlotsLiveShowcase | append: entry | append: "%%" %}
+        {% unless slot.show_in_schedule == false %}
+          {% assign entry = slot.time | append: "||" | append: speaker.data.name | append: "||" | append: speaker.data.company | append: "||" | append: slot.title %}
+          {% assign allSlotsLiveShowcase = allSlotsLiveShowcase | append: entry | append: "%%" %}
+        {% endunless %}
       {% endfor %}
     {% endif %}
   {% endfor %}

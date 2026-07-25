@@ -5,6 +5,9 @@ thumbnail: /src/img/speakers/Jaime_Garcia.webp
 schedule_room_a:
   - time: "2025-08-02T11:00:00+10:00"
     title: "Games Research: Turning Curiosity into a Career"
+  - time: "2025-08-02T14:00:00+10:00"
+    title: "Education Panel"
+    show_in_schedule: false
 schedule_room_b:
 schedule_live_showcase:
 ---

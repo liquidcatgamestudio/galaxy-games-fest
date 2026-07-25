@@ -3,6 +3,9 @@ name: "Adam Younis"
 company: "Game Dev & YouTuber"
 thumbnail: /src/img/speakers/Adam_Younis.webp
 schedule_room_a:
+  - time: "2025-08-02T14:00:00+10:00"
+    title: "Education Panel"
+    show_in_schedule: false
 schedule_room_b:
 schedule_live_showcase:
 ---
