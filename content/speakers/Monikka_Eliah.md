@@ -1,7 +1,7 @@
 ---
 name: "Monikka Eliah"
 company: "Writer"
-thumbnail: /src/img/speakers/Monikka_Eliah.webp
+thumbnail: /src/img/speakers/sprint_logo.png
 schedule_room_a:
 schedule_room_b:
   - time: "2025-08-02T14:00:00+10:00"

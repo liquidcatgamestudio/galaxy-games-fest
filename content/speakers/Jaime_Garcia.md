@@ -40,4 +40,4 @@ In this talk, we will cover some areas that we can do this, even if you don't co
 
 ### **2:00PM | Education Panel | Room A**
 
-A group of game maker educator are gathered together in one room to talk about what it is like teaching in the gaming space, how and why they starting teaching gaming and more. 
+A group of game maker educator are gathered together in one room to talk about what it is like teaching in the gaming space, how and why they starting teaching gaming and more.
