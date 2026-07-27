@@ -26,3 +26,4 @@ I'm a creative software developer, with a passion for audio, visual experiences,
 ### **11:00AM | Feedback Loop: Designing Dynamic Audio, Visual Experiences | Room B**
 
 Real-time audio, visual experiences are exceedingly complex software with often infinite unpredictable combinations of input. From software architecture design, control flow, data interpolation, and generative audio/visual techniques, learn about managing each aspect of designing sophisticated solutions that actively engage and respond to audiences. These techniques can be applied to a range of different projects such as installations, game development, and educational experiences.
+
