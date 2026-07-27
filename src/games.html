@@ -2,22 +2,26 @@
 title: Games
 ---
 
-<div>{% include "games.html" %}</div>
+<div class="space-y-8">
+    <div>{% include "games.html" %}</div>
 
-<div class="flex flex-col gap-8">
-    {% for game in collections.game %}
-    <div class="flex flex-col md:flex-row gap-8">
-        <div class="aspect-video w-32 h-full bg-borderpurple">
-            {% if game.data.thumbnail %}
-            <img src="{{ game.data.thumbnail }}" alt="Thumbnail for {{ game.data.title }}" class="w-full h-full object-cover">
-            {% endif %}
+    <div class="flex flex-col gap-8">
+        {% for game in collections.game %}
+        <div class="w-full flex flex-row justify-start items-center gap-8">
+            <div>
+                <div class="aspect-video w-32 h-full">
+                    {% if game.data.thumbnail %}
+                    <img src="{{ game.data.thumbnail }}" alt="Thumbnail for {{ game.data.title }}" class="w-full h-full object-cover">
+                    {% endif %}
+                </div>
+            </div>
+            <div class="flex flex-col justify-center w-full p-2">
+                <h2><a href="{{ game.url }}">{{ game.data.title }}</a></h2>
+                <h3 class="text-gray-500">{{ game.data.author }}</h3>
+            </div>
         </div>
-        <div>
-            <h2><a href="{{ game.url }}">{{ game.data.title }}</a></h2>
-            <h3 class="text-sm text-gray-400">{{ game.data.author }}</h3>
-        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
+    
+    <div>{% include "games2.html" %}</div>
 </div>
-
-<div>{% include "games2.html" %}</div>

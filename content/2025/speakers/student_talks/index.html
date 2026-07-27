@@ -4,33 +4,170 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Galaxy Games Fest</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
 		<link rel="stylesheet" href="/assets/css/styles.css">
 	</head>
-	<body class="bg-slate-950 text-emerald-50 font-outfit overflow-x-hidden">
-    <img src="/src/img/base.png" class="fixed top-0 left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="base" />
-    <img src="/src/img/clouds.png" class="fixed bottom-0 left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="clouds" />
-    <img src="/src/img/lights.png" class="fixed top-[-15vh] left-0 w-full h-full z-[-2] object-cover pointer-events-none" id="lights" />
+	<body class="overflow-x-hidden bg-darkpurple">
+    <img src="/src/img/2026/planet_with_space.png" class="fixed top-0 left-0 right-0 w-full h-full z-[-2] pointer-events-none" />
+    <div id="shine-ring" class="fixed top-[-350px] left-0 aspect-square right-0 z-[-2] pointer-events-none">
+      
+        <div class="shine-parallax absolute inset-0" data-angle="0">
+          <img
+            src="/src/img/2026/shine/YELLOW.png"
+            class="shine absolute inset-0 w-full h-full object-cover will-change-transform"
+            alt=""
+          />
+        </div>
+      
+        <div class="shine-parallax absolute inset-0" data-angle="30">
+          <img
+            src="/src/img/2026/shine/LIME.png"
+            class="shine absolute inset-0 w-full h-full object-cover will-change-transform"
+            alt=""
+          />
+        </div>
+      
+        <div class="shine-parallax absolute inset-0" data-angle="60">
+          <img
+            src="/src/img/2026/shine/GREEN.png"
+            class="shine absolute inset-0 w-full h-full object-cover will-change-transform"
+            alt=""
+          />
+        </div>
+      
+        <div class="shine-parallax absolute inset-0" data-angle="90">
+          <img
+            src="/src/img/2026/shine/TURQ.png"
+            class="shine absolute inset-0 w-full h-full object-cover will-change-transform"
+            alt=""
+          />
+        </div>
+      
+        <div class="shine-parallax absolute inset-0" data-angle="120">
+          <img
+            src="/src/img/2026/shine/BLUE.png"
+            class="shine absolute inset-0 w-full h-full object-cover will-change-transform"
+            alt=""
+          />
+        </div>
+      
+        <div class="shine-parallax absolute inset-0" data-angle="150">
+          <img
+            src="/src/img/2026/shine/BLURPLE.png"
+            class="shine absolute inset-0 w-full h-full object-cover will-change-transform"
+            alt=""
+          />
+        </div>
+      
+        <div class="shine-parallax absolute inset-0" data-angle="180">
+          <img
+            src="/src/img/2026/shine/PURPLE.png"
+            class="shine absolute inset-0 w-full h-full object-cover will-change-transform"
+            alt=""
+          />
+        </div>
+      
+        <div class="shine-parallax absolute inset-0" data-angle="210">
+          <img
+            src="/src/img/2026/shine/PINK.png"
+            class="shine absolute inset-0 w-full h-full object-cover will-change-transform"
+            alt=""
+          />
+        </div>
+      
+        <div class="shine-parallax absolute inset-0" data-angle="240">
+          <img
+            src="/src/img/2026/shine/RED.png"
+            class="shine absolute inset-0 w-full h-full object-cover will-change-transform"
+            alt=""
+          />
+        </div>
+      
+        <div class="shine-parallax absolute inset-0" data-angle="270">
+          <img
+            src="/src/img/2026/shine/ORANGE.png"
+            class="shine absolute inset-0 w-full h-full object-cover will-change-transform"
+            alt=""
+          />
+        </div>
+      
+        <div class="shine-parallax absolute inset-0" data-angle="300">
+          <img
+            src="/src/img/2026/shine/GOLD.png"
+            class="shine absolute inset-0 w-full h-full object-cover will-change-transform"
+            alt=""
+          />
+        </div>
+      
+        <div class="shine-parallax absolute inset-0" data-angle="330">
+          <img
+            src="/src/img/2026/shine/MANGO.png"
+            class="shine absolute inset-0 w-full h-full object-cover will-change-transform"
+            alt=""
+          />
+        </div>
+      
+    </div>
 
-		<header class="fixed top-0 left-0 right-0 z-10 flex flex-col md:flex-row justify-between p-8 gap-4 bg-darkpurple md:bg-transparent">
-			<div class="text-center">
-        <ul>
-          <li><a href="/">Galaxy Games Fest</a></li>
-        </ul>
+		<header class="static md:fixed top-0 left-0 right-0 z-10 flex flex-col md:flex-row justify-between p-8 gap-4">
+			<div>
+        <div class="window">
+          <div class="title-bar">
+            <div class="title-bar-text">
+              Galaxy Games Fest
+            </div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
+            <section class="field-row" style="justify-content: flex-end">
+              <a href="/"><button>GO</button></a>
+            </section>
+          </div>
+        </div>
       </div>
 			<div>
+        <div class="window">
+          <div class="title-bar">
+            <div class="title-bar-text">
+              Galaxy Games Fest
+            </div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
+            <section class="field-row flex flex-wrap gap-2">
+              <a href="https://linktr.ee/LiquidCatStudio" target="_blank" class="m-0"><button>Socials</button></a>
+              <a href="/learnmore" class="m-0"><button>Schedule</button></a>
+              <a href="/speakers" class="m-0"><button>Speakers</button></a>
+              <a href="/games" class="m-0"><button>Games</button></a>
+              <a href="/2025" class="m-0"><button>2025</button></a>
+            </section>
+          </div>
+        </div>
+
         <ul class="flex flex-row justify-center gap-4">
-          <li><a href="https://linktr.ee/LiquidCatStudio" target="_blank">Socials</a></li>
-          <li><a href="/learnmore">Schedule</a></li>
-          <li><a href="/speakers">Speakers</a></li>
-          <li><a href="/games">Games</a></li>
-          <li><a href="/2025">2025</a></li>
+          <li></li>
         </ul>
       </div>
 		</header>
+
     <main class="flex justify-center">
       
-        <div class="w-full md:w-1/2 bg-darkpurple border-borderpurple border-2 mt-32 p-8 rounded">
-          <h1>Sprint Talks sessions</h1>
+        <div class="w-full md:w-3/4 xl:w-1/2 p-8 mt-0 md:mt-32">
+          <div class="window min-h-[300px]">
+            <div class="title-bar">
+              <div class="title-bar-text"></div>
+              <div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Maximize"></button><button aria-label="Close"></button></div>
+            </div>
+            <div class="window-body text-lg p-8">
+              <h1>Sprint Talks sessions</h1>
 <p>We have students, graduates, indie studios and other emerging developers doing short talks about their projects.</p>
 <h2>Talks</h2>
 <h3>12:00PM | Sprint Talk Sessions | Room B</h3>
@@ -43,11 +180,17 @@
 <p>🦖 Alex Piotrowski</p>
 <p>🕹 Playmakers</p>
 
+            </div>
+        </div>
         </div>
       
     </main>
+
 		<footer class="text-center p-8">
 		</footer>
+
+<!--<canvas id="gridSphere" class="fixed top-0 left-0 right-0 bottom-0 z-10"></canvas>
+<script src="/src/js/gridSphere.js"></script>-->
 
 <canvas id="starCanvas" class="fixed top-0 left-0 right-0 bottom-0 z-[-1]"></canvas>
 <script src="/src/js/starCanvas.js"></script>
@@ -59,7 +202,8 @@
 
   const clouds = document.getElementById('clouds');
   const lights = document.getElementById('lights');
-  const logo   = document.getElementById('logo');
+  const logo       = document.getElementById('logo');
+  const gridSphere = document.getElementById('gridSphere');
 
   const about_text = document.getElementById('about_text');
   const schedule_text = document.getElementById('schedule_text');
@@ -69,37 +213,88 @@
   const faq_body = document.getElementById('faq_body');
   const faq2_body = document.getElementById('faq2_body');
 
-  if (clouds && lights && logo) {
-    /* --- PARALLAX --- */
+  // Parallax for clouds
+  if (clouds) {
     scroll(
       animate(clouds, { y: [0,  50] }, { duration: 1, easing: 'linear' })
     );
+  } else {
+    console.warn('Clouds element not found – check the ID!');
+  }
+
+  // Parallax for lights
+  if (lights) {
     scroll(
       animate(lights, { y: [0, 500] }, { duration: 1, easing: 'linear' })
     );
-	
-	// asteroids
-    scroll(
-      animate(".asteroid.asteroid-up", { y: [0, -100] }, { duration: 1, easing: 'linear' })
-    );
-    scroll(
-      animate(".asteroid.asteroid-down", { y: [0, 100] }, { duration: 1, easing: 'linear' })
-    );
-
-    /* --- LOGO FADE --- */
-    const fade = animate(
-      logo,
-      { opacity: [0, 1] },
-      { duration: 3, fill: 'both', easing: 'ease-out' }
-    );
-    scroll(fade, { offset: ['start 70%', 'start 40%'] });
   } else {
-    console.warn('Parallax elements not found – check the IDs!');
+    console.warn('Lights element not found – check the ID!');
+  }
+
+  // Logo fades to 10% over the first screen height of scroll
+  if (logo) {
+    scroll(
+      animate(logo, { opacity: [1, 0.1] }, { duration: 1, easing: 'linear' }),
+      { offset: ['0vh', '100vh'] }
+    );
+  } else {
+    console.warn('Logo element not found – check the ID!');
+  }
+
+  if (gridSphere) {
+    scroll(
+      animate(gridSphere, { opacity: [1, 0.1] }, { duration: 1, easing: 'linear' }),
+      { offset: ['0vh', '100vh'] }
+    );
+  }
+
+  // Asteroid parallax (class-based, always run)
+  scroll(
+    animate(".asteroid.asteroid-up", { y: [0, -100] }, { duration: 1, easing: 'linear' })
+  );
+  scroll(
+    animate(".asteroid.asteroid-down", { y: [0, 100] }, { duration: 1, easing: 'linear' })
+  );
+
+  // Shine ring: scroll parallax on wrapper, ambient radial in/out on each image
+  const shineWrappers = document.querySelectorAll('.shine-parallax');
+  if (shineWrappers.length) {
+    const maxRadius = Math.min(window.innerWidth, window.innerHeight) * 0.45;
+    const drift = maxRadius * 0.12;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    shineWrappers.forEach((wrapper, i) => {
+      const img = wrapper.querySelector('.shine');
+      const angleRad = ((parseFloat(wrapper.dataset.angle) - 90) * Math.PI) / 180;
+      const dx = Math.cos(angleRad);
+      const dy = Math.sin(angleRad);
+
+      scroll(
+        animate(
+          wrapper,
+          {
+            x: [0, maxRadius * dx],
+            y: [0, maxRadius * dy],
+          },
+          { duration: 1, easing: 'linear' }
+        )
+      );
+
+      if (!reducedMotion && img) {
+        const duration = 5 + (i % 6) * 1.2;
+        const delay = (i * 0.55) % 4;
+        animate(
+          img,
+          {
+            x: [0, drift * dx, 0],
+            y: [0, drift * dy, 0],
+          },
+          { duration, delay, repeat: Infinity, ease: 'easeInOut' }
+        );
+      }
+    });
   }
 </script>
-
-
-
 
 	</body>
 </html>

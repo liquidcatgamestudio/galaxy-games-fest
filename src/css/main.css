@@ -8,57 +8,10 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Boldonse";
-  src: url("/src/font/Boldonse.ttf") format("truetype");
-  font-display: swap;
+.window-body {
+  font-family: 'Outfit', Courier, monospace;
 }
 
-.border {
-  border: none!important;
-}
-
-body {
-  font-weight: 300;
-}
-
-h1 {
-  text-align: center;
-}
-h1 { font-size: 2em; }
-h2 { font-size: 1.66em; }
-h3 { font-size: 1.33em; }
-h4 { font-size: 1em; }
-h5 { font-size: 1em; }
-h6 { font-size: 1em; }
-
-p {
-  margin: 1em 0;
-}
-
-article {
-  width: 100%;
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-a {
-  position: relative;
-}
-
-a:after {
-  background-color: #1f075f;
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  z-index: 0;
-  transition: 300ms ease;
-}
-
-iframe {
-  width: 100%;
+.window .window-body button {
+  font-family: "Pixelated MS Sans Serif", Arial;
 }
