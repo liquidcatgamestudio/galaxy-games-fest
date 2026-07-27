@@ -5,7 +5,7 @@ thumbnail: /src/img/speakers/Monikka_Eliah.jpeg
 schedule_room_a:
 schedule_room_b:
   - time: "2025-08-02T14:00:00+10:00"
-    title: "Narrative writting"
+    title: "Storytelling in Games"
 schedule_live_showcase:
 ---
 
@@ -18,6 +18,7 @@ published in online literary journals and several anthologies. In 2026 she parti
 
 ## **Talks**
 
-### **2:00PM | Narrative Writing talk | Room B**
+### **2:00PM | Storytelling in Games | Room B**
 
-Learn how to write stories!
+Storytelling is a valuable tool in game development. It can help to develop characters, build immersive worlds, influence game mechanics, and help you connect with players.
+Come along and learn some of the basic ways you can build your skills in storytelling.
