@@ -5,7 +5,7 @@ thumbnail: /src/img/speakers/Jasper_Devir.webp
 schedule_room_a:
 schedule_room_b:
   - time: "2025-08-02T11:00:00+10:00"
-    title: "Coming soon"
+    title: "Feedback Loop: Designing Dynamic Audio, Visual Experiences"
 schedule_live_showcase:
 ---
 
@@ -23,6 +23,6 @@ I'm a creative software developer, with a passion for audio, visual experiences,
 
 ## **Talks**
 
-### **11:00AM | Coming soon | Room B**
+### **11:00AM | Feedback Loop: Designing Dynamic Audio, Visual Experiences | Room B**
 
-Coming Soon
+Real-time audio, visual experiences are exceedingly complex software with often infinite unpredictable combinations of input. From software architecture design, control flow, data interpolation, and generative audio/visual techniques, learn about managing each aspect of designing sophisticated solutions that actively engage and respond to audiences. These techniques can be applied to a range of different projects such as installations, game development, and educational experiences.
