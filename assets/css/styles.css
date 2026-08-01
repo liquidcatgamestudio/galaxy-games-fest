@@ -858,6 +858,10 @@ video {
   .md\:gap-0 {
     gap: 0px;
   }
+
+  .md\:text-left {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1280px) {
