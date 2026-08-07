@@ -1,26 +1,29 @@
 ---
-title: "Zoooom"
-author: "Nova Games"
-thumbnail: /src/img/games/Zoooom_Nova_Games.jpg
+title: "Hero Cleaner"
+author: "Pebblepaw"
+thumbnail: /src/img/games/Hero_Cleaner_Pebblepaw.png
 ---
 
 <div class="flex justify-center my-6">
   <img 
-    src="/src/img/games/Zoooom_Nova_Games.jpg" 
+    src="/src/img/games/Hero_Cleaner_Pebblepaw.png" 
     alt="Zoooom by Nova Games hero image" 
     class="max-w-xl w-full h-auto rounded-lg shadow-md m-0" 
   />
 </div>
 
-# **Zoooom**
+# **Hero Cleaner**
 
-**Nova Games**
-
-Zoooom is a 4-player party game where you play as Delivery Runners. Get ready to brawl it out with you friends as you play loads of different game modes, maps and characters and ZOOOOM your way to the top!
+**Pebblepaw**
 <br></br>
-Find out more at their Steam Page >> **[[Steam](https://store.steampowered.com/app/4346940/Zoooom/?curator_clanid=45791180)]**.
+Hero Cleaner puts you in boots you don’t usually wear in a superhero story: the cleanup crew. After the big fight is over and the hero flies off into the sunset, someone still has to clear the rubble, patch the power lines, and sweep the broken glass off the street… and that someone is you.
+<br></br>
+Hero Cleaner is a 2D narrative platformer where you play as a cleanup crew member assigned to restore the ruined streets of Sydney after a massive superhero incident. Across each shift, you clear debris, repair broken things and search for evidence before the time runs out.
+<br></br>
+The core gameplay combines light platforming, environmental interaction, cleanup & repair tasks, evidence collection, shop upgrades, and cinematic story moments. As the job continues, small details begin to suggest that the city’s heroes may not be as clean as they look.
+<br></br>
+Find out more at their Game Page >> **[[GAME](https://lirunziii.itch.io/hero-cleaner)]**.
 <br></br>
 
-![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4346940/37a29122de5b731211b769eae17e8ce63f08c065/ss_37a29122de5b731211b769eae17e8ce63f08c065.1920x1080.jpg?t=1781219841)
-![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4346940/bdd9558e98337943e481445df70893524c07fbad/ss_bdd9558e98337943e481445df70893524c07fbad.1920x1080.jpg?t=1781219841)
-![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4346940/6aee526fa1b951ee11b1406e2a9ab0e706ca2bdc/ss_6aee526fa1b951ee11b1406e2a9ab0e706ca2bdc.1920x1080.jpg?t=1781219841)
+![](https://img.itch.zone/aW1hZ2UvNDcxNDE4OC8yODA5Mjk2Ny5wbmc=/original/n7xSON.png)
+![](https://img.itch.zone/aW1hZ2UvNDcxNDE4OC8yODA5Mjk2Ni5wbmc=/original/c%2BFzCo.png)
