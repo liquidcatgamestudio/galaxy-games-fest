@@ -1,6 +1,6 @@
 ---
 title: "Castillon"
-author: "Galaxy Games Fest"
+author: "One Up Plus"
 thumbnail: /src/img/games/castillon_one_up_plus.jpg
 ---
 
