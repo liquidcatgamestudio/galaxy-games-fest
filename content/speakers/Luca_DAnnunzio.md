@@ -4,7 +4,7 @@ company: "Indie Game Developer"
 thumbnail: /src/img/speakers/Luca_DAnnunzio.webp
 schedule_room_a:
 schedule_room_b:
-  - time: "2025-08-02T15:00:00+10:00"
+  - time: "2025-08-02T15:30:00+10:00"
     title: "Coming Soom"
 schedule_live_showcase:
 ---
