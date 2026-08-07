@@ -1,7 +1,7 @@
 ---
 title: "Multi-Merge Mayhem"
 author: "PARTYBOMB STUDIO"
-thumbnail: /src/img/games/Multi_Merge_Mayhem_Partybomb_Studio.jpg
+thumbnail: /src/img/games/Multi_Merge_Mayhem_Partybomb_Studio_icon.jpg
 ---
 
 <div class="flex justify-center my-6">
