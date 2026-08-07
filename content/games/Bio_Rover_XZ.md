@@ -1,7 +1,7 @@
 ---
 title: "Bio Rover"
 author: "XZ"
-thumbnail: /src/img/games/Bio_Rover_XZ.png
+thumbnail: /src/img/games/Bio_Rover_XZ_icon.png
 ---
 
 <div class="flex justify-center my-6">
