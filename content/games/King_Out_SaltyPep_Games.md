@@ -20,5 +20,5 @@ KING OUT is a 1v1 online multiplayer Chess-Boxing game where players muster the 
 <br></br>
 
 <div class="my-6 max-w-xl mx-auto">
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/S_fG5LA7LxA?si=q8P8-JQg7i_RpM9Z?autoplay=1&mute=1&loop=1&playlist=S_fG5LA7LxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/S_fG5LA7LxA?si=q8P8-JQg7i_RpM9Z&autoplay=1&mute=1&loop=1&playlist=S_fG5LA7LxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
