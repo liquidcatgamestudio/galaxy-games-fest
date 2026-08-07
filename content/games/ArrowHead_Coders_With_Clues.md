@@ -23,6 +23,6 @@ With hand-drawn 2D animations overlaid over a 3D environment, ArrowHead the game
 This demo was originally made in 72 hours for the University of Sydney Official Game Jam 2026 on the theme "Flip the Script”, which ranked in Top 5 and was presented with the Best Characters award.
 <br><br>
 
-<div class="my-6 max-w-xl mx-auto w-full aspect-video">
-<iframe src="https://www.youtube.com/embed/a0B41TitHaI?si=xmYdbrzwQOjkUzec?autoplay=1&mute=1&loop=1&playlist=a0B41TitHaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="my-6 max-w-xl mx-auto">
+<iframe class="w-full aspect-video"  src="https://www.youtube.com/embed/a0B41TitHaI?si=xmYdbrzwQOjkUzec?autoplay=1&mute=1&loop=1&playlist=a0B41TitHaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
