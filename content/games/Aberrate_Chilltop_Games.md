@@ -7,7 +7,7 @@ thumbnail: /src/img/games/Aberrate_Chilltop_Games.jpg
 <div class="flex justify-center my-6">
   <img 
     src="/src/img/games/Aberrate_Chilltop_Games.jpg" 
-    alt="Castillon by One Up Plus game hero image" 
+    alt="Aberrate by Chilltop Game hero image" 
     class="max-w-xl w-full h-auto rounded-lg shadow-md m-0" 
   />
 </div>

@@ -7,7 +7,7 @@ thumbnail: /src/img/games/Tinkerhold_Black_Voyage_Games.png
 <div class="flex justify-center my-6">
   <img 
     src="/src/img/games/Tinkerhold_Black_Voyage_Games.png"
-    alt="Zoooom by Nova Games hero image" 
+    alt="Tinkerhold by Black Voyage Games hero image" 
     class="max-w-xl w-full h-auto rounded-lg shadow-md m-0" 
   />
 </div>

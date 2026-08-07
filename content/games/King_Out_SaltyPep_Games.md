@@ -7,7 +7,7 @@ thumbnail: /src/img/games/King_Out_SaltyPep_Games.png
 <div class="flex justify-center my-6">
   <img 
     src="/src/img/games/King_Out_SaltyPep_Games.png"
-    alt="Castillon by One Up Plus game hero image" 
+    alt="KING OUT by SaltyPep Game hero image" 
     class="max-w-xl w-full h-auto rounded-lg shadow-md m-0" 
   />
 </div>
