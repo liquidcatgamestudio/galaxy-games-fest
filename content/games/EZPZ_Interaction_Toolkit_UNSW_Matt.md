@@ -11,7 +11,7 @@ thumbnail: /src/img/games/EZPZ_Interaction_Toolkit_UNSW_Matt.png
 # **EZPZ Interaction Toolkit**
 
 **University of New South Wales** • Matt Cabanag
-
+<br></br>
 If you can use Photoshop, you can make VR experiences. That is the promise this toolkit makes to non-technical design students who need to create genuine, independently usable, VR artefacts. In most design schools, programming skills are not usually a prerequisite. However, even as design practice increasingly incorporates interactive digital technologies, traditional design schools are still hesitant to provide programming curricula. In practice, design students needing to incorporate digital technologies in their work are left to their own devices, learning the required technical skills alone, with minimal support. This toolkit provides affordances for drag-and-drop creation, promising that it only needs the same the technical skills required for Adobe Photoshop or Premiere. Additionally, as it is built on top of Unity 3D, students using the toolkit automatically gain experience in an industry standard game engine, which makes them all the more industry ready.
 <br></br>
 Find out more at their GitHub Page >> **[[GITHUB](https://github.com/AVataRR626/EZPZ_Interaction_Toolkit)]**.
