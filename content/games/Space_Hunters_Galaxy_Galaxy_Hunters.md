@@ -7,7 +7,7 @@ thumbnail: /src/img/games/Space_Hunters_Galaxy_Galaxy_Hunters.png
 <div class="flex justify-center my-6">
   <img 
     src="/src/img/games/Space_Hunters_Galaxy_Galaxy_Hunters.png" 
-    alt="Space Hunters: Galaxy by Galaxy Hunters hero image" 
+    alt="Space Hunters: Galaxy by Galaxy Hunters  hero image" 
     class="max-w-xl w-full h-auto rounded-lg shadow-md m-0" 
   />
 </div>
