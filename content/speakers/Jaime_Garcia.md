@@ -32,11 +32,9 @@ schedule_live_showcase:
 
 ## **Talks**
 
-### **11:00AM | Research Methods... in my Games Dev????? | Room A**
+### **11:00AM | Games Research: Turning Curiosity into a Career | Room A**
 
-When we think of games development, it's more or less in the way of "making cool stuff, and how said cool stuff will sell". However, have you thought about using research methods to make this even better?
-
-In this talk, we will cover some areas that we can do this, even if you don't come from a research background! From this, you can make cool stuff that really hits the spot for players! We'll also see how, without realising, you might be using some of these methods, and better understand how to build on them further.
+Coming soon!
 
 ### **2:00PM | Education Panel | Room A**
 

@@ -27,4 +27,4 @@ Bastiaan Olij is the Godot Foundation XR team lead and original developer of God
 
 ### **2:00PM?? | Using Godot for creating XR games and applications | Room B**
 
-In this presentation we will look into Godots XR capabilities, how to get started with it and what opportunities are out there.
+In this presentation we will look into Godot's XR capabilities, how to get started with it and what opportunities are out there.
