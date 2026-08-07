@@ -21,7 +21,7 @@ title: Learn More
   {% assign slotArray = allSlotsRoomA | split: "%%" %}
   {% assign slotArray = slotArray | sort %}
   
-  <h2>Room A</h2>
+  <h2><strong>Room A</strong></h2>
   <p>
     <div>
       {% for item in slotArray %}
@@ -56,7 +56,7 @@ title: Learn More
   {% assign slotArrayB = allSlotsRoomB | split: "%%" %}
   {% assign slotArrayB = slotArrayB | sort %}
   
-  <h2>Room B</h2>
+  <h2><strong>Room B</strong></h2>
   <p>
     <div>
       {% for item in slotArrayB %}
@@ -91,7 +91,8 @@ title: Learn More
   {% assign slotArrayLS = allSlotsLiveShowcase | split: "%%" %}
   {% assign slotArrayLS = slotArrayLS | sort %}
   
-  <h2>Live Showcase</h2>
+  <!-- Live showcase is not avalible in 2026 -->
+  <!-- <h2>Live Showcase</h2> -->
   <p>
     <div>
       {% for item in slotArrayLS %}

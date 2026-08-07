@@ -19,3 +19,5 @@ This is a hybrid event attended in-person or online. Get your free ticket today!
 ## **Exhibition Floor**
 
 Sydney developers, graduates, indie studios and emerging game developers have gathered to display their projects. Come check out their games, art, animations and music projects. Play their unreleased games and network with other developers. See what it is like to make a game and what others have done.
+<br></br>
+<a href="https://events.humanitix.com/galaxy-games-festival-2026" class="m-0"><button class="m-0 px-4 py-2"> Free Tickets Here </button></a>
