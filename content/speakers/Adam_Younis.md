@@ -20,18 +20,18 @@ Adam’s work centres around his project Insignia, an action-adventure title, wh
 
 ## **Socials**
 
-[[Twitch](https://www.twitch.tv/adamcyounis)]
+**[[Twitch](https://www.twitch.tv/adamcyounis)]**
 
-[[YouTube Channel](https://www.youtube.com/adamcyounis)]
+**[[YouTube Channel](https://www.youtube.com/adamcyounis)]**
 
-[[Blue Sky](https://bsky.app/profile/adamcyounis.bsky.social)]
+**[[Blue Sky](https://bsky.app/profile/adamcyounis.bsky.social)]**
 
-[[x](x.com/AdamCYounis)]
+**[[x](x.com/AdamCYounis)]**
 
 ---
 
 ## **Talks**
 
-### **2:00PM?? | Education Panel | Room A**
+### **2:00PM | Education Panel | Room A**
 
-A group of game maker educator are gathered together in one room to talk about what it is like teaching in the gaming space, how and why they starting teaching gaming and more. 
+A group of game maker educator are gathered together in one room to talk about what it is like teaching in the gaming space, how and why they starting teaching gaming and more.
