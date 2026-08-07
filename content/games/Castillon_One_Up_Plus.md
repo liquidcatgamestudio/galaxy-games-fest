@@ -1,7 +1,7 @@
 ---
 title: "Castillon"
 author: "One Up Plus"
-thumbnail: /src/img/games/castillon_one_up_plus.jpg
+thumbnail: /src/img/games/castillon_one_up_plus_icon.png
 ---
 
 <div class="flex justify-center my-6">

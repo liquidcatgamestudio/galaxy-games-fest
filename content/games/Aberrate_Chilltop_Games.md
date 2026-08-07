@@ -1,7 +1,7 @@
 ---
 title: "Aberrate"
 author: "Chilltop Games"
-thumbnail: /src/img/games/Aberrate_Chilltop_Games.jpg
+thumbnail: /src/img/games/Aberrate_Chilltop_Games_icon.jpg
 ---
 
 <div class="flex justify-center my-6">
