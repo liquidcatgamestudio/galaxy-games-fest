@@ -20,6 +20,8 @@ Cubics Cube is a nostalgic blend of Bejeweled, Balatro, and the classic Rubik's 
 <br></br>
 Cubics Cube also features an extensive virtual cubing mode, with various input methods and ways for you to interact with your cube. You can practice your cubing skills in zen mode, or fight for a spot on the leaderboards in our speed-solving mode!
 <br></br>
+Find out more at their Steam Page >> **[[Steam](https://store.steampowered.com/app/4550560/Cubics_Cube/)]**.
+<br></br>
 
 <div class="my-6 max-w-xl mx-auto">
 <iframe class="w-full aspect-video"  src="https://www.youtube.com/embed/h6kpldtdwRc?si=xmYdbrzwQOjkUzec&autoplay=1&mute=1&loop=1&playlist=h6kpldtdwRc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
