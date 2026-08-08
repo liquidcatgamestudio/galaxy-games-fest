@@ -5,7 +5,7 @@ thumbnail: /src/img/games/Bios_Breaker_Dawoozles.png
 ---
 
 <div class="my-6 max-w-xl mx-auto">
-<iframe class="w-full aspect-video"  src="https://www.youtube.com/embed/pvS9fgCDV28?si=xmYdbrzwQOjkUzec&autoplay=1&mute=1&loop=1&playlist=pvS9fgCDV28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="w-full aspect-video"  src="https://www.youtube.com/embed/7rfPtewLwcI?si=xmYdbrzwQOjkUzec&autoplay=1&mute=1&loop=1&playlist=7rfPtewLwcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 # **BIOS Breaker**
