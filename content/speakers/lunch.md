@@ -6,7 +6,7 @@ schedule_room_a:
   - time: "2025-08-02T13:00:00+10:00"
     title: "====== LUNCH ======"
 schedule_room_b:
-  - time: "2025-08-02T13:00:00+10:00"
+  - time: "2025-08-02T13:30:00+10:00"
     title: "====== LUNCH ======"
 schedule_live_showcase:
 ---
