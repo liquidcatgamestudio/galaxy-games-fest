@@ -17,6 +17,7 @@ We have students, graduates, indie studios and other emerging developers doing s
 
 ### 12:00PM | Sprint Talk Sessions | Room B
 
+1.5 hours of sprint talks with 7 presenters this year.<br>
 We have individual and indie studios sign up to give a short 10min talk about their project or a topic of their choice.
 
 #### Come and see the following groups present their talk:
