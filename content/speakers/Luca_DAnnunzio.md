@@ -27,7 +27,7 @@ Luca is an indie game developer currently working on a small pixel art platforme
 
 [[X](https://x.com/SmallOcelot)]
 
-[[Instagram](www.instagram.com/impishregalia)]
+[[Instagram](https://www.instagram.com/impishregalia)]
 
 ---
 
