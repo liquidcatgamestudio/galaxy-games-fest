@@ -5,7 +5,7 @@ thumbnail: /src/img/speakers/Luca_DAnnunzio.webp
 schedule_room_a:
 schedule_room_b:
   - time: "2025-08-02T15:30:00+10:00"
-    title: "Coming Soom"
+    title: "Coming Soon"
 schedule_live_showcase:
 ---
 
