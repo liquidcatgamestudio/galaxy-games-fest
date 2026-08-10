@@ -20,3 +20,6 @@ When murder strikes and the body can't be identified, check to see who's missing
 When things don't make sense because no one is missing, then you're dealing with a Twinskin.
 <br></br>
 The charred corpse strung upon the powerlines was once a resident of Aberdeen. Now they've been replaced, and you must deduce who amongst this strange little town is an unholy façade of flesh and deception.
+
+![](/src/img//games/Twinskin_The_Rotten_Bunch_img_1.png)
+![](/src/img//games/Twinskin_The_Rotten_Bunch_img_2.png)
