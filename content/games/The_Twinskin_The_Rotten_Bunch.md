@@ -7,7 +7,7 @@ thumbnail: /src/img/games/Twinskin_The_Rotten_Bunch.png
 <div class="flex justify-center my-6">
   <img 
     src="/src/img/games/Twinskin_The_Rotten_Bunch.png" 
-    alt="Zoooom by Nova Games hero image" 
+    alt="The Twinskin by The Rotten Bunch hero image" 
     class="max-w-xl w-full h-auto rounded-lg shadow-md m-0" 
   />
 </div>
