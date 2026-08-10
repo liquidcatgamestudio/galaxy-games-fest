@@ -10,6 +10,14 @@ schedule_room_b:
 schedule_live_showcase:
 ---
 
+<div class="flex justify-center my-6">
+  <img 
+    src="/src/img/speakers/Adam_Younis.webp" 
+    alt="" 
+    class="max-w-xl w-full h-auto rounded-lg shadow-md m-0" 
+  />
+</div>
+
 # **Adam Younis (He/him)**
 
 Adam Younis is a game developer based in Sydney, best known for creating educational content on game production, art, and design. His Twitch and YouTube channels feature tutorials, devlogs, and tips on game development, with a focus on pixel art and 2D games.

@@ -9,17 +9,22 @@ schedule_room_b:
 schedule_live_showcase:
 ---
 
-# Sprint Talks sessions
+# **Sprint Talks sessions**
 
 We have students, graduates, indie studios and other emerging developers doing short talks about their projects.
 
-## Talks
+## **Talks**
 
-### 12:00PM | Sprint Talk Sessions | Room B
+### **12:00PM | Sprint Talk Sessions | Room B**
 
 1.5 hours of sprint talks with 7 presenters this year.<br>
 We have individual and indie studios sign up to give a short 10min talk about their project or a topic of their choice.
 
-#### Come and see the following groups present their talk:
+#### **Come and see the following groups present their talk:**
 
-Coming soon
+🌌 Nova Games <br>
+📖 MuGui_Cinnamon<br>
+🧙‍♂️ Sorcery Mastery - Sage Mage<br>
+🚀 Galaxy Hunters<br>
+🤖 Playmakers Development Team<br>
+🧹 Pebblepaw<br>

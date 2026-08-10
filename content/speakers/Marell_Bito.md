@@ -8,6 +8,15 @@ schedule_room_a:
 schedule_room_b:
 schedule_live_showcase:
 ---
+
+<div class="flex justify-center my-6">
+  <img 
+    src="/src/img/speakers/Marell_Bito.webp" 
+    alt="" 
+    class="max-w-xl w-full h-auto rounded-lg shadow-md m-0" 
+  />
+</div>
+
 # **Marell Bito (He/Him)**
 
 An award-winning games developer and academic, Marell works in several areas of games development within Sydney. He predominantly focuses his efforts towards production and game design, but uses his research and education background to assist with making games.

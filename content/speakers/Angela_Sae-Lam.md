@@ -10,6 +10,14 @@ schedule_room_b:
 schedule_live_showcase:
 ---
 
+<div class="flex justify-center my-6">
+  <img 
+    src="/src/img/speakers/angela_sae-lam.png" 
+    alt="" 
+    class="max-w-xl w-full h-auto rounded-lg shadow-md m-0" 
+  />
+</div>
+
 # **Angela Sae-Lam (She/They)**
 
 Angela is a 3D artist and trainer with a diverse background centered around animation, education and community-building.

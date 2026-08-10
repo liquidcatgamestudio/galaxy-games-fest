@@ -9,6 +9,14 @@ schedule_room_b:
 schedule_live_showcase:
 ---
 
+<div class="flex justify-center my-6">
+  <img 
+    src="/src/img/speakers/Matt_Cabanag.webp" 
+    alt="" 
+    class="max-w-xl w-full h-auto rounded-lg shadow-md m-0" 
+  />
+</div>
+
 # **Dr Matt Cabanag (He/him)**
 
 I am an international award winning creative technologist, looking to make a splash in the world. As of 2026 (April), I completed my PhD in Human-Autonomy Teaming at the MARCS Institute for Brain Behaviour and Development in Western Sydney University (Westmead). While pursuing the PhD, I became an Education Focused, Associate Lecturer at UNSW Art & Design (Paddington), where I currently continue to serve on a permanent/part-time basis (0.5 FTE). I teach into the Master of Simulation and Immersive Technologies (MSIT), primarily teaching AR/VR design and development, mainly using the Meta Quest 3, Unity3D, and OpenXR standards.

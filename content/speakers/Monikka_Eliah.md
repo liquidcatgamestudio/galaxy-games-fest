@@ -9,6 +9,14 @@ schedule_room_b:
 schedule_live_showcase:
 ---
 
+<div class="flex justify-center my-6">
+  <img 
+    src="/src/img/speakers/Monikka_Eliah.jpeg" 
+    alt="" 
+    class="max-w-xl w-full h-auto rounded-lg shadow-md m-0" 
+  />
+</div>
+
 # **Monikka Eliah (She/Her)**
 
 Monikka Eliah is an Assyrian writer, visual artist. She has worked in prose, theatre and screen. Her work has been
