@@ -4,7 +4,7 @@ tags: faq
 
 # **When is it?**
 
-Sat 22nd Aug 2026 AEST
+Sat 22nd Aug 2026 10AM - 4:30PM AEST
 
 # **Who is it for?**
 
@@ -16,7 +16,7 @@ At Macquarie University — a leader in games education and a central hub for Sy
 
 # **Address**
 
-Macquarie University, Wallumattagal Campus
+Macquarie University, Wallumattagal Campus <br>
 12 Wally's Walk, Macquarie Park NSW 2113, Australia
-
+<br>
 Sydney Australia

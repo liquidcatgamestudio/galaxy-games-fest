@@ -2,7 +2,7 @@
 tags: learnmore
 ---
 
-**Galaxy Games Festival is an event for emerging game developers.**
+# **Galaxy Games Festival is an event for emerging game developers.**
 
 We have local Sydney developers in programming, art and music showcasing their amazing projects on the day. Come see what your fellow developers have created, play their game and support their journey into the game industry. Broaden your understanding on what the game industry encompasses with guest panellists and speakers doing talks throughout the day. We have people from many different areas of the games and adjacent industries, giving you a glimpse of what it is like to work in their field. Games, animation, design, art, music, research and more.
 
@@ -16,8 +16,28 @@ This is a hybrid event attended in-person or online. Get your free ticket today!
 
 <br>
 
+## **Date & Time**
+
+Sat 22nd Aug 2026
+10AM - 4:30PM AEST
+
+<br>
+
+## **Address**
+
+Macquarie University, Wallumattagal Campus <br>
+12 Wally's Walk, Macquarie Park NSW 2113, Australia
+
+<br>
+
+<a href="https://events.humanitix.com/galaxy-games-festival-2026" class="m-0"><button class="m-0 px-4 py-2"> Free Tickets Here </button></a>
+
+<br>
+
 ## **Exhibition Floor**
 
 Sydney developers, graduates, indie studios and emerging game developers have gathered to display their projects. Come check out their games, art, animations and music projects. Play their unreleased games and network with other developers. See what it is like to make a game and what others have done.
-<br></br>
-<a href="https://events.humanitix.com/galaxy-games-festival-2026" class="m-0"><button class="m-0 px-4 py-2"> Free Tickets Here </button></a>
+
+<br>
+
+## **Talks Schedule**
