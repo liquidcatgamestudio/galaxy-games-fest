@@ -40,4 +40,8 @@ Sydney developers, graduates, indie studios and emerging game developers have ga
 
 <br>
 
+<a href="/games" class="m-0"><button class="m-0 px-4 py-2"> See all the Games Here </button></a>
+
+<br>
+
 ## **Talks Schedule**
