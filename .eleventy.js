@@ -14,11 +14,14 @@ function resolveLocalSrc(src) {
   return path.join(INPUT_DIR, cleaned);
 }
 
-async function generateImage(src, widths, formats) {
+async function generateImage(src, widths, formats, options = {}) {
   const input = resolveLocalSrc(src);
   if (!input || (!/^https?:\/\//i.test(input) && !fs.existsSync(input))) {
     return null;
   }
+
+  const quality = options.quality ?? 78;
+  const pngQuality = options.pngQuality ?? Math.min(quality, 100);
 
   return Image(input, {
     widths,
@@ -26,8 +29,9 @@ async function generateImage(src, widths, formats) {
     outputDir: IMG_OUTPUT,
     urlPath: "/img/",
     cacheDir: IMG_CACHE,
-    sharpWebpOptions: { quality: 78 },
-    sharpJpegOptions: { quality: 78, mozjpeg: true },
+    sharpWebpOptions: { quality },
+    sharpJpegOptions: { quality, mozjpeg: true },
+    sharpPngOptions: { quality: pngQuality, compressionLevel: 9 },
   });
 }
 
@@ -107,10 +111,19 @@ module.exports = function (eleventyConfig) {
     }
   );
 
-  /** Hero / decorative image — WebP (+ JPEG fallback) at given widths. */
+  /**
+   * Hero / decorative image — WebP (+ JPEG/PNG fallback) at given widths.
+   * Optional 5th arg: "high" for logo-grade quality (WebP q92 + PNG fallback).
+   */
   eleventyConfig.addAsyncShortcode(
     "optImg",
-    async function (src, widths = "1280", className = "", extraAttrs = "") {
+    async function (
+      src,
+      widths = "1280",
+      className = "",
+      extraAttrs = "",
+      qualityMode = ""
+    ) {
       if (!src) return "";
       const widthList = String(widths)
         .split(",")
@@ -123,10 +136,18 @@ module.exports = function (eleventyConfig) {
         .replace(/\balt="[^"]*"\s*/i, "")
         .trim();
 
+      const highQuality = String(qualityMode).toLowerCase() === "high";
+      const formats = highQuality ? ["webp", "png"] : ["webp", "jpeg"];
+      const quality = highQuality ? 92 : 78;
+      const sizes = highQuality
+        ? "(max-width: 768px) 100vw, 50vw"
+        : "100vw";
+
       const metadata = await generateImage(
         src,
         widthList.length ? widthList : [1280],
-        ["webp", "jpeg"]
+        formats,
+        { quality }
       );
       if (!metadata) {
         return `<img src="${escapeAttr(src)}" class="${escapeAttr(className)}" ${extraAttrs} alt="${escapeAttr(alt)}" decoding="async" />`;
@@ -135,7 +156,7 @@ module.exports = function (eleventyConfig) {
       const hasLoading = /\bloading=/.test(attrsWithoutAlt);
       const html = Image.generateHTML(metadata, {
         alt,
-        sizes: "100vw",
+        sizes,
         class: className,
         decoding: "async",
         loading: hasLoading ? undefined : "eager",
