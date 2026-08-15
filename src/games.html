@@ -12,7 +12,7 @@ title: Games
             <div>
                 <div class="aspect-video w-full sm:w-32">
                     {% if game.data.thumbnail %}
-                    <img src="{{ game.data.thumbnail }}" alt="Thumbnail for {{ game.data.title }}" class="w-full h-full object-cover">
+                    {% thumb game.data.thumbnail, game.data.title %}
                     {% endif %}
                 </div>
             </div>

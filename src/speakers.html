@@ -12,7 +12,7 @@ title: Speakers
             <div>
                 <div class="aspect-square overflow-hidden w-32 h-32 m-auto">
                     {% if speaker.data.thumbnail %}
-                    <img src="{{ speaker.data.thumbnail }}" alt="Thumbnail for {{ speaker.data.name }}" class="w-full h-full object-cover">
+                    {% thumb speaker.data.thumbnail, speaker.data.name %}
                     {% endif %}
                 </div>
             </div>

@@ -118,7 +118,7 @@ title: Galaxy Games Fest 2025
           <div class="flex flex-col items-center gap-8">
             <div class="aspect-square overflow-hidden w-32 h-32">
               {% if speaker.data.thumbnail %}
-                <img src="{{ speaker.data.thumbnail }}" alt="Thumbnail for {{ speaker.data.name }}" class="w-full h-full object-cover">
+                {% thumb speaker.data.thumbnail, speaker.data.name %}
               {% endif %}
             </div>
             <div class="text-center">
@@ -168,7 +168,7 @@ title: Galaxy Games Fest 2025
         <div class="flex flex-col items-center gap-8">
           <div class="aspect-video w-32 h-full shrink-0">
             {% if game.data.thumbnail %}
-              <img src="{{ game.data.thumbnail }}" alt="Thumbnail for {{ game.data.title }}" class="w-full h-full object-cover">
+              {% thumb game.data.thumbnail, game.data.title %}
             {% endif %}
           </div>
           <div class="text-center">
