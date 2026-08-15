@@ -4,7 +4,7 @@ layout: layout.html
 isLanding: true
 ---
 
-<img src="/src/img/2026/final-logo-2026.png" class="fixed top-[50vh] left-1/2 w-full z-[-2] md:w-full md:w-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none" id="logo" />
+{% optImg "/src/img/2026/final-logo-2026.png", "640,960", "fixed top-[50vh] left-1/2 w-full z-[-2] md:w-full md:w-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none", "id=\"logo\" fetchpriority=\"high\"" %}
 
 <article class="h-screen">
     <!-- lander --> 

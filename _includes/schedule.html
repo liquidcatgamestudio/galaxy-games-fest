@@ -2,8 +2,8 @@
 {{ schedule.templateContent }}
 <p></p>
 <div class="flex">
-        <div class="flex-1" style="display: flex; justify-content: center;">
-            <img src="/src/img/mq_logo_profile_Black.png" style="width: 45%;">
-            <img src="/src/img/WICMQ_Logo_3.png" style="width: 45%;">
+        <div class="flex-1" style="display: flex; justify-content: center; gap: 0.5rem; align-items: center;">
+            {% optImg "/src/img/mq_logo_profile_Black.png", "280,420", "", "loading=\"lazy\" fetchpriority=\"low\" style=\"width: 45%; height: auto;\"" %}
+            {% optImg "/src/img/WICMQ_Logo_3.png", "280,420", "", "loading=\"lazy\" fetchpriority=\"low\" style=\"width: 45%; height: auto;\"" %}
         </div>
 </div>

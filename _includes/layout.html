@@ -4,19 +4,15 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title | default: "Galaxy Games Fest" }}</title>
-    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="/vendor/98css/98.css" />
 		<link rel="stylesheet" href="/assets/css/styles.css">
 	</head>
 	<body class="overflow-x-hidden bg-darkpurple">
-    <img src="/src/img/2026/planet_with_space.png" class="fixed top-0 left-0 right-0 w-full h-full z-[-2] pointer-events-none" />
+    {% optImg "/src/img/2026/planet_with_space.png", "960,1600", "fixed top-0 left-0 right-0 w-full h-full z-[-2] pointer-events-none object-cover", "fetchpriority=\"high\"" %}
     <div id="shine-ring" class="fixed top-[-350px] left-0 aspect-square right-0 z-[-2] pointer-events-none">
       {% for shine in shineImages %}
         <div class="shine-parallax absolute inset-0" data-angle="{{ shine.angle }}">
-          <img
-            src="{{ shine.src }}"
-            class="shine absolute inset-0 w-full h-full object-cover will-change-transform"
-            alt=""
-          />
+          {% optImg shine.src, "600,900", "shine absolute inset-0 w-full h-full object-cover", "loading=\"lazy\" fetchpriority=\"low\"" %}
         </div>
       {% endfor %}
     </div>
@@ -97,33 +93,22 @@
 <script src="/src/js/gridSphere.js"></script>-->
 
 <canvas id="starCanvas" class="fixed top-0 left-0 right-0 bottom-0 z-[-1]"></canvas>
-<script src="/src/js/starCanvas.js"></script>
+<script src="/src/js/starCanvas.js" defer></script>
+<script src="/src/js/ytLite.js" defer></script>
 
 <script type="module">
-  import { animate, scroll } from 'https://cdn.jsdelivr.net/npm/motion@11/+esm';
-
-  console.log('Motion loaded');
+  import { animate, scroll } from '/src/js/vendor/motion.js';
 
   const clouds = document.getElementById('clouds');
   const lights = document.getElementById('lights');
   const logo       = document.getElementById('logo');
   const gridSphere = document.getElementById('gridSphere');
 
-  const about_text = document.getElementById('about_text');
-  const schedule_text = document.getElementById('schedule_text');
-  const partners_text = document.getElementById('partners_text');
-  const faq_text = document.getElementById('faq_text');
-
-  const faq_body = document.getElementById('faq_body');
-  const faq2_body = document.getElementById('faq2_body');
-
   // Parallax for clouds
   if (clouds) {
     scroll(
       animate(clouds, { y: [0,  50] }, { duration: 1, easing: 'linear' })
     );
-  } else {
-    console.warn('Clouds element not found – check the ID!');
   }
 
   // Parallax for lights
@@ -131,8 +116,6 @@
     scroll(
       animate(lights, { y: [0, 500] }, { duration: 1, easing: 'linear' })
     );
-  } else {
-    console.warn('Lights element not found – check the ID!');
   }
 
   // Logo fades to 10% over the first screen height of scroll
@@ -141,8 +124,6 @@
       animate(logo, { opacity: [1, 0.1] }, { duration: 1, easing: 'linear' }),
       { offset: ['0vh', '100vh'] }
     );
-  } else {
-    console.warn('Logo element not found – check the ID!');
   }
 
   if (gridSphere) {
@@ -152,20 +133,25 @@
     );
   }
 
-  // Asteroid parallax (class-based, always run)
-  scroll(
-    animate(".asteroid.asteroid-up", { y: [0, -100] }, { duration: 1, easing: 'linear' })
-  );
-  scroll(
-    animate(".asteroid.asteroid-down", { y: [0, 100] }, { duration: 1, easing: 'linear' })
-  );
+  // Asteroid parallax (class-based)
+  if (document.querySelector('.asteroid.asteroid-up')) {
+    scroll(
+      animate('.asteroid.asteroid-up', { y: [0, -100] }, { duration: 1, easing: 'linear' })
+    );
+  }
+  if (document.querySelector('.asteroid.asteroid-down')) {
+    scroll(
+      animate('.asteroid.asteroid-down', { y: [0, 100] }, { duration: 1, easing: 'linear' })
+    );
+  }
 
-  // Shine ring: scroll parallax on wrapper, ambient radial in/out on each image
+  // Shine ring: scroll parallax on wrapper; ambient drift only while visible
   const shineWrappers = document.querySelectorAll('.shine-parallax');
   if (shineWrappers.length) {
     const maxRadius = Math.min(window.innerWidth, window.innerHeight) * 0.45;
     const drift = maxRadius * 0.12;
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const ambientControls = [];
 
     shineWrappers.forEach((wrapper, i) => {
       const img = wrapper.querySelector('.shine');
@@ -187,7 +173,7 @@
       if (!reducedMotion && img) {
         const duration = 5 + (i % 6) * 1.2;
         const delay = (i * 0.55) % 4;
-        animate(
+        const control = animate(
           img,
           {
             x: [0, drift * dx, 0],
@@ -195,8 +181,32 @@
           },
           { duration, delay, repeat: Infinity, ease: 'easeInOut' }
         );
+        ambientControls.push(control);
       }
     });
+
+    const shineRing = document.getElementById('shine-ring');
+    if (shineRing && ambientControls.length && 'IntersectionObserver' in window) {
+      const io = new IntersectionObserver(
+        ([entry]) => {
+          ambientControls.forEach((c) => {
+            if (!c) return;
+            if (entry.isIntersecting && !document.hidden) c.play?.();
+            else c.pause?.();
+          });
+        },
+        { rootMargin: '10% 0px' }
+      );
+      io.observe(shineRing);
+
+      document.addEventListener('visibilitychange', () => {
+        ambientControls.forEach((c) => {
+          if (!c) return;
+          if (document.hidden) c.pause?.();
+          else c.play?.();
+        });
+      });
+    }
   }
 </script>
 

@@ -26,11 +26,8 @@ Find out more at their Steam Page >> **[[Steam](https://store.steampowered.com/a
 <div class="my-6 max-w-xl mx-auto">
 <video class="w-full aspect-video rounded-lg shadow-md bg-black" controls 
     playsinline 
-    autoplay 
-    muted 
-    loop 
-    preload="auto"
-    preload="metadata">
+    preload="metadata"
+    poster="/src/img/games/castillon_one_up_plus.jpg">
 <source src="/src/vid/games/castillon_trailer.mp4" type="video/mp4" >
 Your browser does not support the video tag.
 </video>
@@ -39,10 +36,8 @@ Your browser does not support the video tag.
 <div class="my-6 max-w-xl mx-auto">
 <video class="w-full aspect-video rounded-lg shadow-md bg-black" controls 
     playsinline 
-    autoplay 
-    muted 
-    loop 
-    preload="auto">
+    preload="metadata"
+    poster="/src/img/games/castillon_one_up_plus.jpg">
 <source src="/src/vid/games/Castillon_vid2.webm" type="video/webm" >
 Your browser does not support the video tag.
 </video>
