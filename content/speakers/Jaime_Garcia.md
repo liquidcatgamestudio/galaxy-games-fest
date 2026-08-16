@@ -32,9 +32,9 @@ schedule_live_showcase:
 
 [[LinkedIn](https://www.linkedin.com/in/jaime-garcia-460a2134/)]
 
-[[Games Studio](www.gamesstudio.org)]
+[[Games Studio](https://www.gamesstudio.org)]
 
-[[Gaming for Health](www.gamingforhealth.org)]
+[[Gaming for Health](https://www.gamingforhealth.org)]
 
 ---
 

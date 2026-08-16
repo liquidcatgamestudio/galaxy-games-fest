@@ -34,7 +34,7 @@ Adam’s work centres around his project Insignia, an action-adventure title, wh
 
 **[[Blue Sky](https://bsky.app/profile/adamcyounis.bsky.social)]**
 
-**[[x](x.com/AdamCYounis)]**
+**[[x](https://x.com/AdamCYounis)]**
 
 ---
 
