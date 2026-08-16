@@ -5,7 +5,7 @@ thumbnail: /src/img/speakers/Luca_DAnnunzio.webp
 schedule_room_a:
 schedule_room_b:
   - time: "2025-08-02T15:30:00+10:00"
-    title: "Coming Soon"
+    title: "Game Dev and Self‑Doubt: Learning to Challenge Negative Thoughts"
 schedule_live_showcase:
 ---
 
@@ -33,6 +33,6 @@ Luca is an indie game developer currently working on a small pixel art platforme
 
 ## **Talks**
 
-### **3:00PM | coming soon | Room B**
+### **3:00PM | Game Dev and Self‑Doubt: Learning to Challenge Negative Thoughts | Room B**
 
-Coming soon
+In this talk, I will share my personal game dev journey. The wins, and the failures, and the ongoing barrage of self-doubt and imposter syndrome. I’ll share how I’ve dealt with negative feedback, rejection, and irrational thoughts. I may not have all the answers, but I do have real experiences, both good and bad, and in sharing them I hope other devs and artists can feel less alone and reestablish their joy and confidence in what made them start creating in the first place.
