@@ -2,10 +2,15 @@
 tags: faq2
 ---
 
-# **Why should I attend?**
+# **Giveaway**
 
-To see other fellow indie developers' work, learn from industry pros, network with studios, and be inspired by the future of Australian games.
-
-# **Is it only for students?**
-
-Nope! While students are a big part of the community, the festival is open to developers at all stages, including seasoned professionals and studios.
+MSI Australia has sponsored some prizes for a giveaway at Galaxy Games Festival. <br>
+**Prizes** <br>
+• MSI Gaming and Creators Headset worth about $69 each, we have 2 to give away<br>
+• MSI Gaming Mouse worth about $99<br>
+• MSI Thermos Bottle worth about $30 each, we have 2 white bottles to give away<br>
+**Rules to enter the giveaway:** <br>
+• Must Attend the In-Person event on Sat 22 Aug 2026 10AM-4PM <br>
+• Complete a task to get 1 free entry, you can do multiple tasks to get more entry into the giveaway draw<br>
+• Tasks will be provided to you on the day of the event <br>
+• Winners will be picked randomly and announce at the end of the event at 4:30PM <br>
