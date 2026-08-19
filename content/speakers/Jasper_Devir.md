@@ -5,7 +5,7 @@ thumbnail: /src/img/speakers/Jasper_Devir.webp
 schedule_room_a:
 schedule_room_b:
   - time: "2025-08-02T11:00:00+10:00"
-    title: "Feedback Loop: Designing Dynamic Audio, Visual Experiences"
+    title: "CANCELLED Feedback Loop: Designing Dynamic Audio, Visual Experiences"
 schedule_live_showcase:
 ---
 
