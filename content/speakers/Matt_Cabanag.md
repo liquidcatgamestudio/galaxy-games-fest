@@ -4,6 +4,8 @@ company: "University of New South Wales"
 thumbnail: /src/img/speakers/Matt_Cabanag.webp
 schedule_room_a:
 schedule_room_b:
+  - time: "2025-08-02T11:00:00+10:00"
+    title: "EZPZ interaction toolkit - What is it?"
   - time: "2025-08-02T15:00:00+10:00"
     title: "Matt's 3 VR Game Talk - extended sprint session"
 schedule_live_showcase:
@@ -40,7 +42,15 @@ Insta: **[[@mattavc](https://www.instagram.com/mattavc/)]**
 
 ## **Talks**
 
-### **3:00PM | Matt's 3 VR Game Talk - extended sprint session | Room A**
+### **11:00AM | EZPZ interaction toolkit - What is it? | Room B**
+
+EZPZ Interaction Toolkit can get you building genuine, independently usable, interactive prototypes without needing to write code. All you need to do is drag and drop! Built on top of Unity 3D, it is a collection of scripts and prefabricated objects that you can mix and match to suit your purposes.
+<br>
+Matt will go into detail on what this tool is and how to use it.
+
+**[[EZPZ Interaction Toolkit GitHub](https://github.com/AVataRR626/EZPZ_Interaction_Toolkit)]**
+
+### **3:00PM | Matt's 3 VR Game Talk - extended sprint session | Room B**
 
 This will be 3 lightning talks stacked end-to-end. The first topic will be about how I teach vector arithmetic using Virtual Reality. The second topic will be how I get non-programming design students to make VR games. The third topic will be a lightning run through my TaiChi spellcasting game that has nothing to do with uni work!
 <br></br>

@@ -1,5 +1,5 @@
 ---
-title: "Selenophobia "
+title: "Selenophobia"
 author: "Nova Games"
 thumbnail: /src/img/games/Selenophobia_Pixel_Degen.png
 ---
