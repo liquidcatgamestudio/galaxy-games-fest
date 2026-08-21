@@ -22,7 +22,6 @@ We have individual and indie studios sign up to give a short 10min talk about th
 #### **Come and see the following groups present their talk:**
 
 🌌 Nova Games <br>
-📖 MuGui_Cinnamon<br>
 🧙‍♂️ Sorcery Mastery - Sage Mage<br>
 🚀 Galaxy Hunters<br>
 🤖 Playmakers Development Team<br>
